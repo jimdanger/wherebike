@@ -1,8 +1,11 @@
 import React from 'react'
 import { ScrollView, Text, Image, View } from 'react-native'
 import DevscreensButton from '../../ignite/DevScreens/DevscreensButton.js'
+import FixtureAPI from '../../App/Services/FixtureApi'
+
 
 import { Images } from '../Themes'
+import MapView from 'react-native-maps'
 
 // For API
 import API from '../../App/Services/Api'
@@ -26,7 +29,15 @@ export default class MainScreen extends React.Component {
   }
 
   componentDidMount() {
-      this.getHubs()
+      // this.getHubs()
+      this.getMockHubs()
+  }
+
+  getMockHubs(){
+    this.setState({
+        hubs: FixtureAPI.getHubs(),
+        displaytext : FixtureAPI.getHubs().data[2].address
+    })
   }
 
   getHubs() {
@@ -67,15 +78,26 @@ export default class MainScreen extends React.Component {
 
           <View style={styles.section} >
             {/* <Image source={Images.ready} /> */}
-
             {/* // how to make this dynamic? */}
             <Text style={styles.sectionText}>
               {this.state.displaytext}
             </Text>
-
           </View>
 
-          <DevscreensButton />
+          <View style={styles.section} >
+
+            <MapView
+              style={styles.map}
+              initialRegion={{
+                latitude: 37.78825,
+                longitude: -122.4324,
+                latitudeDelta: 0.0922,
+                longitudeDelta: 0.0421,
+              }}
+            />
+          </View>
+
+          {/* <DevscreensButton /> */}
         </ScrollView>
       </View>
     )

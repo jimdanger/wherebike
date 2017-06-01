@@ -17,5 +17,9 @@ export default StyleSheet.create({
   },
   centered: {
     alignItems: 'center'
+  },
+  map: {
+    ...StyleSheet.absoluteFillObject,
+
   }
 })
