@@ -6,6 +6,12 @@ export default {
       data: require('../Fixtures/root.json')
     }
   },
+  getHubs: () => {
+    return {
+      ok: true,
+      data: require('../Fixtures/hubs.json')
+    }
+  },
   getRate: () => {
     return {
       ok: true,

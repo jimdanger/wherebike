@@ -1,0 +1,3676 @@
+[
+  {
+    "id": 1470,
+    "name": "HARDY IVY PARK",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "272-292 Peachtree Street Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 1,
+    "available_bikes": 1,
+    "free_racks": 8,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.3874105811119,
+            33.76291117877768
+          ],
+          [
+            -84.387429356575,
+            33.76280637626004
+          ],
+          [
+            -84.38739717006683,
+            33.76272833174873
+          ],
+          [
+            -84.38727110624313,
+            33.762625758854405
+          ],
+          [
+            -84.38711285591125,
+            33.76285097309171
+          ],
+          [
+            -84.38739717006683,
+            33.7629624650694
+          ],
+          [
+            -84.3874105811119,
+            33.76291117877768
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38727110624313,
+        33.7627941119619
+      ]
+    }
+  },
+  {
+    "id": 1471,
+    "name": "WOODRUFF PARK",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "42-60 Park Place Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 6,
+    "available_bikes": 6,
+    "free_racks": 4,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.38833594322203,
+            33.75568173445428
+          ],
+          [
+            -84.38871949911116,
+            33.7555903032777
+          ],
+          [
+            -84.38897162675858,
+            33.75572856501914
+          ],
+          [
+            -84.38836008310318,
+            33.756638410917105
+          ],
+          [
+            -84.38725769519806,
+            33.75649346062412
+          ],
+          [
+            -84.38730597496033,
+            33.75621693938546
+          ],
+          [
+            -84.38740253448486,
+            33.755944877296294
+          ],
+          [
+            -84.3877726793289,
+            33.755489951874104
+          ],
+          [
+            -84.38833594322203,
+            33.75568173445428
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38792020082474,
+        33.75595602716396
+      ]
+    }
+  },
+  {
+    "id": 1472,
+    "name": "MARTA - FIVE POINTS ",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "29 Peachtree Street Southwest, Atlanta",
+    "distance": null,
+    "current_bikes": 5,
+    "available_bikes": 5,
+    "free_racks": 5,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.39075529575348,
+            33.75352304065008
+          ],
+          [
+            -84.39068287611008,
+            33.75354757156681
+          ],
+          [
+            -84.39064264297485,
+            33.75356541222911
+          ],
+          [
+            -84.39061313867568,
+            33.753578792723395
+          ],
+          [
+            -84.39060240983963,
+            33.75353642115098
+          ],
+          [
+            -84.39071774482727,
+            33.75347174871061
+          ],
+          [
+            -84.39085453748702,
+            33.753433837257354
+          ],
+          [
+            -84.39075529575348,
+            33.75352304065008
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.39071238040923,
+        33.7534918194732
+      ]
+    }
+  },
+  {
+    "id": 1473,
+    "name": "GSU ARTS & HUMANITIES BLDG",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "9-33 Gilmer Street Southeast, Atlanta",
+    "distance": null,
+    "current_bikes": 3,
+    "available_bikes": 3,
+    "free_racks": 6,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.3863993883133,
+            33.75427234548481
+          ],
+          [
+            -84.38645303249359,
+            33.754203213467726
+          ],
+          [
+            -84.38613653182983,
+            33.75395344571573
+          ],
+          [
+            -84.3860614299774,
+            33.75392445476879
+          ],
+          [
+            -84.38587903976439,
+            33.754136311462645
+          ],
+          [
+            -84.3863108754158,
+            33.754359317943226
+          ],
+          [
+            -84.3863993883133,
+            33.75427234548481
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38625454902649,
+        33.7541786827386
+      ]
+    }
+  },
+  {
+    "id": 1474,
+    "name": "GSU PETIT SCIENCE CENTER",
+    "racks_amount": 10,
+    "description": "PIEDMONT AVE & DECATUR ST\r\n",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "142-148 Piedmont Avenue Southeast, Atlanta",
+    "distance": null,
+    "current_bikes": 4,
+    "available_bikes": 4,
+    "free_racks": 6,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.38572883605957,
+            33.74992361007541
+          ],
+          [
+            -84.38536405563354,
+            33.75051683517894
+          ],
+          [
+            -84.3848705291748,
+            33.75095394578698
+          ],
+          [
+            -84.38546597957611,
+            33.75135091165336
+          ],
+          [
+            -84.3858414888382,
+            33.75116469474824
+          ],
+          [
+            -84.38614457845688,
+            33.75095394578698
+          ],
+          [
+            -84.3865093588829,
+            33.750594890808095
+          ],
+          [
+            -84.38572883605957,
+            33.74992361007541
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38602454960346,
+        33.75082180926927
+      ]
+    }
+  },
+  {
+    "id": 1475,
+    "name": "SWEET AUBURN MARKET",
+    "racks_amount": 7,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "2-30 Jesse Hill Junior Drive Southeast, Atlanta",
+    "distance": null,
+    "current_bikes": 5,
+    "available_bikes": 5,
+    "free_racks": 2,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.38077881932259,
+            33.75391776454889
+          ],
+          [
+            -84.380584359169,
+            33.75410286044052
+          ],
+          [
+            -84.3805119395256,
+            33.75404376360288
+          ],
+          [
+            -84.38068762421608,
+            33.753882083367216
+          ],
+          [
+            -84.38077881932259,
+            33.75391776454889
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38063263893127,
+        33.753977976509304
+      ]
+    }
+  },
+  {
+    "id": 1476,
+    "name": "NELSON ST BRIDGE",
+    "racks_amount": 10,
+    "description": "WEST SIDE OF NELSON ST BRIDGE. INTERSECTION OF CHAPEL ST & NELSON ST",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "311 Nelson Street Southwest, Atlanta",
+    "distance": null,
+    "current_bikes": 4,
+    "available_bikes": 4,
+    "free_racks": 5,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.39784303307533,
+            33.75218330742556
+          ],
+          [
+            -84.39780816435814,
+            33.75216881165405
+          ],
+          [
+            -84.39776726067066,
+            33.75224686577939
+          ],
+          [
+            -84.39785979688168,
+            33.7522808750546
+          ],
+          [
+            -84.39789466559886,
+            33.752203378489746
+          ],
+          [
+            -84.39784303307533,
+            33.75218330742556
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.39781688153744,
+        33.75221452907895
+      ]
+    }
+  },
+  {
+    "id": 1477,
+    "name": "BROAD & MITCHELL",
+    "racks_amount": 7,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "78-122 Broad Street Southwest, Atlanta",
+    "distance": null,
+    "current_bikes": 4,
+    "available_bikes": 4,
+    "free_racks": 3,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.39352735877037,
+            33.75156835004272
+          ],
+          [
+            -84.3934328109026,
+            33.75166814850348
+          ],
+          [
+            -84.39333021640778,
+            33.75160570478743
+          ],
+          [
+            -84.3934254348278,
+            33.75150088844759
+          ],
+          [
+            -84.39352735877037,
+            33.75156835004272
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.39338453114033,
+        33.75160347465388
+      ]
+    }
+  },
+  {
+    "id": 1478,
+    "name": "CITY HALL",
+    "racks_amount": 8,
+    "description": "SOUTH SIDE OF BUILDING OFF TRINITY AVE",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "55 Trinity Avenue Southwest, Atlanta",
+    "distance": null,
+    "current_bikes": 5,
+    "available_bikes": 5,
+    "free_racks": 3,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.39095914363861,
+            33.74849182431072
+          ],
+          [
+            -84.39110666513443,
+            33.7483022558675
+          ],
+          [
+            -84.39094305038452,
+            33.748226428372874
+          ],
+          [
+            -84.3908303976059,
+            33.7484226876329
+          ],
+          [
+            -84.39095914363861,
+            33.74849182431072
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.39089745283127,
+        33.74842937828157
+      ]
+    }
+  },
+  {
+    "id": 1479,
+    "name": "M. RICH CENTER",
+    "racks_amount": 8,
+    "description": "INTERSECTION OF MARTIN LUTHER KING JR DR & PRYOR ST.",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "101-115 Martin Luther King Junior Drive Southwest, Atlanta",
+    "distance": null,
+    "current_bikes": 5,
+    "available_bikes": 5,
+    "free_racks": 3,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.39117908477783,
+            33.751736725032075
+          ],
+          [
+            -84.39127027988434,
+            33.75160960752102
+          ],
+          [
+            -84.39105570316313,
+            33.75150256104974
+          ],
+          [
+            -84.39096182584763,
+            33.75161852805426
+          ],
+          [
+            -84.39117908477783,
+            33.751736725032075
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.39111605286598,
+        33.75161964304091
+      ]
+    }
+  },
+  {
+    "id": 1633,
+    "name": "TECH SQUARE ",
+    "racks_amount": 15,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "61 5th Street Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 10,
+    "available_bikes": 10,
+    "free_racks": 4,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.38919961452484,
+            33.776911196914206
+          ],
+          [
+            -84.38923716545105,
+            33.776813099952115
+          ],
+          [
+            -84.3891191482544,
+            33.776801952562955
+          ],
+          [
+            -84.38889652490616,
+            33.77678411673729
+          ],
+          [
+            -84.38887774944305,
+            33.77694463903467
+          ],
+          [
+            -84.38911378383636,
+            33.77692457376396
+          ],
+          [
+            -84.38919961452484,
+            33.776911196914206
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38897430896759,
+        33.77686214844722
+      ]
+    }
+  },
+  {
+    "id": 2114,
+    "name": "MARTA - MIDTOWN  (NORTH)",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "46-76 10th Street Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 4,
+    "available_bikes": 4,
+    "free_racks": 6,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.38635915517807,
+            33.781592966747404
+          ],
+          [
+            -84.38635647296906,
+            33.78150825128099
+          ],
+          [
+            -84.38614457845688,
+            33.78148372836717
+          ],
+          [
+            -84.38615262508392,
+            33.78157736127304
+          ],
+          [
+            -84.38635915517807,
+            33.781592966747404
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38624918460846,
+        33.781519398057654
+      ]
+    }
+  },
+  {
+    "id": 2115,
+    "name": "CENTENNIAL OLYMPIC PARK",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "92-118 Park Avenue West Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 4,
+    "available_bikes": 4,
+    "free_racks": 5,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.39463913440704,
+            33.760378043743906
+          ],
+          [
+            -84.3947571516037,
+            33.760306686743334
+          ],
+          [
+            -84.39463913440704,
+            33.760199651131074
+          ],
+          [
+            -84.39431190490723,
+            33.76037358393311
+          ],
+          [
+            -84.39444601535797,
+            33.76046278010493
+          ],
+          [
+            -84.39463913440704,
+            33.760378043743906
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.39453452825546,
+        33.760331215618
+      ]
+    }
+  },
+  {
+    "id": 2116,
+    "name": "FAIRLIE-POPLAR DISTRICT",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "56 Marietta, Marietta Street, Five Points, Virginia Highland, Atlanta, Georgia",
+    "distance": null,
+    "current_bikes": 3,
+    "available_bikes": 3,
+    "free_racks": 6,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.391388297081,
+            33.7555479326994
+          ],
+          [
+            -84.39130112528801,
+            33.75560925852963
+          ],
+          [
+            -84.3911576271057,
+            33.75545650138013
+          ],
+          [
+            -84.39113080501556,
+            33.755398520492996
+          ],
+          [
+            -84.39120322465897,
+            33.75538402526511
+          ],
+          [
+            -84.3913896381855,
+            33.75553901257498
+          ],
+          [
+            -84.391388297081,
+            33.7555479326994
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.39126022160053,
+        33.755496641897366
+      ]
+    }
+  },
+  {
+    "id": 2117,
+    "name": "Sweet Auburn",
+    "racks_amount": 1,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "41 Piedmont Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 4,
+    "available_bikes": 4,
+    "free_racks": 0,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.38217625021935,
+            33.75588689673948
+          ],
+          [
+            -84.38217759132385,
+            33.75570960979357
+          ],
+          [
+            -84.38205420970917,
+            33.75571852990026
+          ],
+          [
+            -84.38205152750014,
+            33.75588578172838
+          ],
+          [
+            -84.38217222690581,
+            33.7558924717947
+          ],
+          [
+            -84.38217625021935,
+            33.75588689673948
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.382114559412,
+        33.75580104079414
+      ]
+    }
+  },
+  {
+    "id": 2118,
+    "name": "MARTA - NORTH AVE ",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "2-4 Ponce De Leon Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 9,
+    "available_bikes": 9,
+    "free_racks": 1,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.38727915287018,
+            33.772347339748436
+          ],
+          [
+            -84.38728719949722,
+            33.77232504380646
+          ],
+          [
+            -84.38718527555466,
+            33.77231835502272
+          ],
+          [
+            -84.38718259334564,
+            33.77235179893612
+          ],
+          [
+            -84.38727915287018,
+            33.772347339748436
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38723489642143,
+        33.77233507697942
+      ]
+    }
+  },
+  {
+    "id": 2119,
+    "name": "PEACHTREE CENTER MALL",
+    "racks_amount": 7,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "Peachtree Center Avenue Cycle Track, Atlanta",
+    "distance": null,
+    "current_bikes": 1,
+    "available_bikes": 1,
+    "free_racks": 6,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.38620626926422,
+            33.76012160424624
+          ],
+          [
+            -84.38622772693634,
+            33.75988300332898
+          ],
+          [
+            -84.3860802054405,
+            33.75982502543569
+          ],
+          [
+            -84.38605070114136,
+            33.76019519131099
+          ],
+          [
+            -84.38620090484618,
+            33.76022863995592
+          ],
+          [
+            -84.38620626926422,
+            33.76012160424624
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38613921403885,
+        33.7600268326958
+      ]
+    }
+  },
+  {
+    "id": 2120,
+    "name": "OUTWRITE STATION",
+    "racks_amount": 14,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "250 10th Street Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 2,
+    "available_bikes": 2,
+    "free_racks": 12,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.37936931848526,
+            33.78176685612649
+          ],
+          [
+            -84.37936395406723,
+            33.78171112238958
+          ],
+          [
+            -84.37902331352234,
+            33.78171112238958
+          ],
+          [
+            -84.37901258468628,
+            33.78179360830732
+          ],
+          [
+            -84.3793773651123,
+            33.781798067003315
+          ],
+          [
+            -84.37936931848526,
+            33.78176685612649
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.37919497489929,
+        33.78175459469645
+      ]
+    }
+  },
+  {
+    "id": 2124,
+    "name": "MARTA - CIVIC CENTER ",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "3 Ivan Allen Junior Boulevard Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 6,
+    "available_bikes": 6,
+    "free_racks": 4,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.38792020082474,
+            33.76482658945086
+          ],
+          [
+            -84.38787996768951,
+            33.764750776570814
+          ],
+          [
+            -84.38758760690689,
+            33.764802061761735
+          ],
+          [
+            -84.38759833574295,
+            33.76489794268848
+          ],
+          [
+            -84.38792020082474,
+            33.76482658945086
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38775390386581,
+        33.76482435962964
+      ]
+    }
+  },
+  {
+    "id": 2125,
+    "name": "FEDERAL RESERVE BANK OF ATLANTA",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "82-88 11th Street Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 5,
+    "available_bikes": 5,
+    "free_racks": 5,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.38452184200287,
+            33.78336082565018
+          ],
+          [
+            -84.3846344947815,
+            33.78320477399987
+          ],
+          [
+            -84.38429117202759,
+            33.783169105011275
+          ],
+          [
+            -84.38416242599487,
+            33.78332961534287
+          ],
+          [
+            -84.38452184200287,
+            33.78336082565018
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38439846038818,
+        33.78326496533073
+      ]
+    }
+  },
+  {
+    "id": 2143,
+    "name": "COLONY SQUARE",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "166-168 14th Street Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 7,
+    "available_bikes": 7,
+    "free_racks": 3,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.38222855329514,
+            33.7863770252557
+          ],
+          [
+            -84.38197642564774,
+            33.78636142065309
+          ],
+          [
+            -84.38187718391418,
+            33.78660217706268
+          ],
+          [
+            -84.38221246004103,
+            33.78657542638392
+          ],
+          [
+            -84.38222855329514,
+            33.7863770252557
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38205286860466,
+        33.786481798857885
+      ]
+    }
+  },
+  {
+    "id": 2155,
+    "name": "GORDON-WHITE PARK",
+    "racks_amount": 10,
+    "description": "Virtual Hub",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "1340-1346 Ralph David Abernathy Boulevard Southwest, Atlanta",
+    "distance": null,
+    "current_bikes": 8,
+    "available_bikes": 8,
+    "free_racks": 2,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.43219542503357,
+            33.73894597496979
+          ],
+          [
+            -84.43221151828766,
+            33.73887906106142
+          ],
+          [
+            -84.43192183971405,
+            33.73883445176017
+          ],
+          [
+            -84.43187355995178,
+            33.73892813126599
+          ],
+          [
+            -84.43219542503357,
+            33.73897274051854
+          ],
+          [
+            -84.43219542503357,
+            33.73894597496979
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.43203449249268,
+        33.738874600132334
+      ]
+    }
+  },
+  {
+    "id": 2156,
+    "name": "MARTA - WEST END ",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "656-674 Lee Street Southwest, Atlanta",
+    "distance": null,
+    "current_bikes": 6,
+    "available_bikes": 6,
+    "free_racks": 4,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.41368818283081,
+            33.73697422324589
+          ],
+          [
+            -84.41382765769958,
+            33.736996528383074
+          ],
+          [
+            -84.41399395465851,
+            33.736916229862075
+          ],
+          [
+            -84.41395103931427,
+            33.73683147023061
+          ],
+          [
+            -84.41373646259306,
+            33.73678239882673
+          ],
+          [
+            -84.41363990306854,
+            33.736880541606396
+          ],
+          [
+            -84.41368818283081,
+            33.73697422324589
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.41377937793732,
+        33.736898385736104
+      ]
+    }
+  },
+  {
+    "id": 2157,
+    "name": "WEST END PARK (Virtual Hub)",
+    "racks_amount": 4,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "1099 Oak Street Southwest, Atlanta",
+    "distance": null,
+    "current_bikes": 4,
+    "available_bikes": 4,
+    "free_racks": 0,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.42457795143127,
+            33.740873073133294
+          ],
+          [
+            -84.42461013793945,
+            33.740641109905575
+          ],
+          [
+            -84.4240415096283,
+            33.74059650152063
+          ],
+          [
+            -84.4238805770874,
+            33.74088199478339
+          ],
+          [
+            -84.42428827285767,
+            33.74099797614998
+          ],
+          [
+            -84.42457795143127,
+            33.740873073133294
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.42424535751343,
+        33.7407972388353
+      ]
+    }
+  },
+  {
+    "id": 2167,
+    "name": "HISTORIC WESTSIDE VILLAGE",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "814 Martin Luther King Junior Drive Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 8,
+    "available_bikes": 8,
+    "free_racks": 2,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.4143533706665,
+            33.75482985971408
+          ],
+          [
+            -84.41434264183043,
+            33.75472281726328
+          ],
+          [
+            -84.41389203071594,
+            33.75472727736806
+          ],
+          [
+            -84.4138652086258,
+            33.75482093951493
+          ],
+          [
+            -84.41395103931427,
+            33.75482985971408
+          ],
+          [
+            -84.4141173362732,
+            33.75482985971408
+          ],
+          [
+            -84.4143533706665,
+            33.75482985971408
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.41407442092896,
+        33.754745117784864
+      ]
+    }
+  },
+  {
+    "id": 2168,
+    "name": "WALTON SPRING PARK",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "40-68 Andrew Young International Boulevard Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 3,
+    "available_bikes": 3,
+    "free_racks": 7,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.38945710659027,
+            33.75958419376689
+          ],
+          [
+            -84.38959121704102,
+            33.75958419376689
+          ],
+          [
+            -84.3896073102951,
+            33.7596689309127
+          ],
+          [
+            -84.3894839286804,
+            33.7596689309127
+          ],
+          [
+            -84.38932299613951,
+            33.75967339076016
+          ],
+          [
+            -84.38933372497559,
+            33.7595797339148
+          ],
+          [
+            -84.38945710659027,
+            33.75958419376689
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.3894839286804,
+        33.759651091520546
+      ]
+    }
+  },
+  {
+    "id": 2178,
+    "name": "SPELMAN COLLEGE AT WESTVIEW",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "373-407 Westview Drive Southwest, Atlanta",
+    "distance": null,
+    "current_bikes": 7,
+    "available_bikes": 7,
+    "free_racks": 3,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.41365599632262,
+            33.74442381655484
+          ],
+          [
+            -84.41376328468323,
+            33.744513029320665
+          ],
+          [
+            -84.413902759552,
+            33.744405973990546
+          ],
+          [
+            -84.41375255584717,
+            33.74426323334254
+          ],
+          [
+            -84.41351652145384,
+            33.74416509900924
+          ],
+          [
+            -84.41328048706055,
+            33.744468422949346
+          ],
+          [
+            -84.4135057926178,
+            33.74449518677492
+          ],
+          [
+            -84.41365599632262,
+            33.74442381655484
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.41357016563416,
+        33.74427215464
+      ]
+    }
+  },
+  {
+    "id": 2462,
+    "name": "AUC - WOODRUFF LIBRARY",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "768-798 Beckwith Street Southwest, Atlanta",
+    "distance": null,
+    "current_bikes": 6,
+    "available_bikes": 6,
+    "free_racks": 3,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.41337704658508,
+            33.752021693372896
+          ],
+          [
+            -84.41340386867523,
+            33.75190349678792
+          ],
+          [
+            -84.41329926252365,
+            33.75189234615828
+          ],
+          [
+            -84.41328585147858,
+            33.75204176447491
+          ],
+          [
+            -84.4133797287941,
+            33.752037304230434
+          ],
+          [
+            -84.41337704658508,
+            33.752021693372896
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.4133448600769,
+        33.7519670553166
+      ]
+    }
+  },
+  {
+    "id": 2463,
+    "name": "PIEDMONT PARK & EASTSIDE BELTLINE",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "Meadow Path, Atlanta",
+    "distance": null,
+    "current_bikes": 10,
+    "available_bikes": 10,
+    "free_racks": 0,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.36994940042496,
+            33.782154274262844
+          ],
+          [
+            -84.36997085809708,
+            33.782040577915396
+          ],
+          [
+            -84.36987429857254,
+            33.78201828449624
+          ],
+          [
+            -84.36985284090042,
+            33.78220109036204
+          ],
+          [
+            -84.36994671821593,
+            33.78221000771136
+          ],
+          [
+            -84.36994940042496,
+            33.782154274262844
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.36991184949875,
+        33.7821141461038
+      ]
+    }
+  },
+  {
+    "id": 2464,
+    "name": "PIEDMONT PARK EAST",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "505-519 Park Drive Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 10,
+    "available_bikes": 10,
+    "free_racks": 0,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.3714353442192,
+            33.78635647455077
+          ],
+          [
+            -84.37146753072739,
+            33.786305202262035
+          ],
+          [
+            -84.37124222517014,
+            33.78625392994262
+          ],
+          [
+            -84.37120199203491,
+            33.78636539146741
+          ],
+          [
+            -84.37141925096512,
+            33.78640774680879
+          ],
+          [
+            -84.3714353442192,
+            33.78635647455077
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.37133476138115,
+        33.786330838375704
+      ]
+    }
+  },
+  {
+    "id": 2465,
+    "name": "PIEDMONT PARK WEST",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "1158 Piedmont Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 0,
+    "available_bikes": 0,
+    "free_racks": 10,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.37813147902489,
+            33.78647889049913
+          ],
+          [
+            -84.37813349068163,
+            33.78645882746196
+          ],
+          [
+            -84.3780791759491,
+            33.78646328591507
+          ],
+          [
+            -84.37806241214275,
+            33.78648000511215
+          ],
+          [
+            -84.37813147902489,
+            33.78647889049913
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.3780979514122,
+        33.78646941628706
+      ]
+    }
+  },
+  {
+    "id": 2466,
+    "name": "HISTORIC FOURTH WARD PARK",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "Dallas Street Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 5,
+    "available_bikes": 5,
+    "free_racks": 5,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.3655626475811,
+            33.77087332163403
+          ],
+          [
+            -84.36559215188026,
+            33.770839877143516
+          ],
+          [
+            -84.3654003739357,
+            33.77077075848843
+          ],
+          [
+            -84.3653655052185,
+            33.770832073427194
+          ],
+          [
+            -84.3655626475811,
+            33.77087332163403
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.36547882854939,
+        33.77082204006123
+      ]
+    }
+  },
+  {
+    "id": 2467,
+    "name": "JACKSON STREET BRIDGE",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "179-195 Jackson Street Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 4,
+    "available_bikes": 4,
+    "free_racks": 5,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.37425501644611,
+            33.75952386379482
+          ],
+          [
+            -84.37430933117867,
+            33.75952776616796
+          ],
+          [
+            -84.37430866062641,
+            33.759538358322736
+          ],
+          [
+            -84.37425434589386,
+            33.75953557091372
+          ],
+          [
+            -84.37425434589386,
+            33.75952776616796
+          ],
+          [
+            -84.37425501644611,
+            33.75952386379482
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.37428183853626,
+        33.75953111105878
+      ]
+    }
+  },
+  {
+    "id": 2468,
+    "name": "WEST END STATION",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "906-908 Ralph David Abernathy Boulevard, Atlanta",
+    "distance": null,
+    "current_bikes": 2,
+    "available_bikes": 2,
+    "free_racks": 8,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.41765785217285,
+            33.73798638270982
+          ],
+          [
+            -84.41765516996384,
+            33.73794400343319
+          ],
+          [
+            -84.41746473312377,
+            33.737959616853345
+          ],
+          [
+            -84.4174513220787,
+            33.738010918070934
+          ],
+          [
+            -84.41765785217285,
+            33.73798638270982
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.41755458712578,
+        33.73797746075206
+      ]
+    }
+  },
+  {
+    "id": 2481,
+    "name": "THE COCA-COLA COMPANY",
+    "racks_amount": 9,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "531-541 Luckie Street Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 4,
+    "available_bikes": 4,
+    "free_racks": 5,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.39615458250046,
+            33.76967600074168
+          ],
+          [
+            -84.39615592360497,
+            33.76964255578383
+          ],
+          [
+            -84.39609423279762,
+            33.769643670615956
+          ],
+          [
+            -84.39609557390213,
+            33.7696771155734
+          ],
+          [
+            -84.39615458250046,
+            33.76967600074168
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.3961250782013,
+        33.76965983567862
+      ]
+    }
+  },
+  {
+    "id": 2482,
+    "name": "TECH PARKWAY",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "822-828 Hampton Street Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 7,
+    "available_bikes": 7,
+    "free_racks": 3,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.40765321254729,
+            33.77747835260946
+          ],
+          [
+            -84.40767601132393,
+            33.77750622085957
+          ],
+          [
+            -84.40757945179939,
+            33.77755861314527
+          ],
+          [
+            -84.40754055976868,
+            33.77754077747716
+          ],
+          [
+            -84.40765321254729,
+            33.77747835260946
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.4076082855463,
+        33.77751848287736
+      ]
+    }
+  },
+  {
+    "id": 2483,
+    "name": "GEORGIA TECH - CRC",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "761 Ferst Drive, Atlanta",
+    "distance": null,
+    "current_bikes": 3,
+    "available_bikes": 3,
+    "free_racks": 7,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.40251544117928,
+            33.77544729013152
+          ],
+          [
+            -84.40254896879196,
+            33.77545286391442
+          ],
+          [
+            -84.40253287553787,
+            33.775530896836976
+          ],
+          [
+            -84.40249666571616,
+            33.775552077189396
+          ],
+          [
+            -84.40251544117928,
+            33.77544729013152
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.40252281725407,
+        33.775499683660456
+      ]
+    }
+  },
+  {
+    "id": 2485,
+    "name": "HOME PARK",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "1005 Hemphill Avenue Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 5,
+    "available_bikes": 5,
+    "free_racks": 5,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.40450429916382,
+            33.78205754181014
+          ],
+          [
+            -84.40439835190773,
+            33.78207760587845
+          ],
+          [
+            -84.4043205678463,
+            33.78193046926838
+          ],
+          [
+            -84.40440103411674,
+            33.78190148778508
+          ],
+          [
+            -84.40450429916382,
+            33.78205754181014
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.40441243350506,
+        33.78198954683177
+      ]
+    }
+  },
+  {
+    "id": 2486,
+    "name": "CENTRAL PARK",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "523-581 Central Park Place Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 4,
+    "available_bikes": 4,
+    "free_racks": 6,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.3777559697628,
+            33.768590147774816
+          ],
+          [
+            -84.37775194644928,
+            33.768544439083236
+          ],
+          [
+            -84.37770098447798,
+            33.76853217577158
+          ],
+          [
+            -84.37768086791037,
+            33.76857676962371
+          ],
+          [
+            -84.37767550349236,
+            33.76862470798887
+          ],
+          [
+            -84.37770500779152,
+            33.768636971287265
+          ],
+          [
+            -84.37774658203125,
+            33.76862805252496
+          ],
+          [
+            -84.3777559697628,
+            33.768590147774816
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.37771573662758,
+        33.768584573529424
+      ]
+    }
+  },
+  {
+    "id": 2487,
+    "name": "GEORGIA TECH - TRANSIT HUB",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "Tech Parkway Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 7,
+    "available_bikes": 7,
+    "free_racks": 3,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.39740717411041,
+            33.772846279607315
+          ],
+          [
+            -84.39750105142592,
+            33.77272811173687
+          ],
+          [
+            -84.39728379249573,
+            33.77261217329047
+          ],
+          [
+            -84.39713627099991,
+            33.77272365256874
+          ],
+          [
+            -84.39735621213913,
+            33.77287080499397
+          ],
+          [
+            -84.39740717411041,
+            33.772846279607315
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.39731866121292,
+        33.77274148914222
+      ]
+    }
+  },
+  {
+    "id": 2488,
+    "name": "GEORGIA TECH -BOBBY DODD STADIUM",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "703 Techwood Drive Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 11,
+    "available_bikes": 11,
+    "free_racks": 0,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.39199715852737,
+            33.77133150983959
+          ],
+          [
+            -84.39205214381218,
+            33.77134823199052
+          ],
+          [
+            -84.39203068614006,
+            33.77148981273767
+          ],
+          [
+            -84.39197435975075,
+            33.77149984601007
+          ],
+          [
+            -84.39199715852737,
+            33.77133150983959
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.39201325178146,
+        33.771415677924836
+      ]
+    }
+  },
+  {
+    "id": 2489,
+    "name": "STUDIOPLEX",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "632 Auburn Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 11,
+    "available_bikes": 11,
+    "free_racks": 0,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.36652958393097,
+            33.75683663701477
+          ],
+          [
+            -84.36649337410927,
+            33.756812107039124
+          ],
+          [
+            -84.3664102256298,
+            33.756883466948764
+          ],
+          [
+            -84.36644375324249,
+            33.75691580188824
+          ],
+          [
+            -84.36653226613998,
+            33.75684555700416
+          ],
+          [
+            -84.36652958393097,
+            33.75683663701477
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.3664712458849,
+        33.75686395446368
+      ]
+    }
+  },
+  {
+    "id": 2490,
+    "name": "KING OF POPS",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "311-343 Bernina Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 9,
+    "available_bikes": 9,
+    "free_racks": 0,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.35902342200279,
+            33.7637772231349
+          ],
+          [
+            -84.35898452997208,
+            33.763735971512205
+          ],
+          [
+            -84.35894429683685,
+            33.763741546056984
+          ],
+          [
+            -84.35898587107658,
+            33.76378948712699
+          ],
+          [
+            -84.35902342200279,
+            33.7637772231349
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.35898385941982,
+        33.763762729319595
+      ]
+    }
+  },
+  {
+    "id": 2491,
+    "name": "GREENWOOD AVE BELTLINE",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "670-680 Greenwood Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 10,
+    "available_bikes": 10,
+    "free_racks": 0,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.36526961624622,
+            33.77667530766955
+          ],
+          [
+            -84.36534337699412,
+            33.77671376621289
+          ],
+          [
+            -84.3653453886509,
+            33.7767327167931
+          ],
+          [
+            -84.3652032315731,
+            33.7767304873133
+          ],
+          [
+            -84.36520524322987,
+            33.77670206144066
+          ],
+          [
+            -84.36526961624622,
+            33.77667530766955
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.365274310112,
+        33.77670401223132
+      ]
+    }
+  },
+  {
+    "id": 2496,
+    "name": "ATLANTA BICYCLE COALITION - VIRTUAL HUB",
+    "racks_amount": 2,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "2-62 Selman Street Southeast, Atlanta",
+    "distance": null,
+    "current_bikes": 2,
+    "available_bikes": 2,
+    "free_racks": 0,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.35827977955341,
+            33.75247310038181
+          ],
+          [
+            -84.35828514397144,
+            33.752402851857575
+          ],
+          [
+            -84.35822948813438,
+            33.75239337387767
+          ],
+          [
+            -84.35822144150733,
+            33.75247198532631
+          ],
+          [
+            -84.35827977955341,
+            33.75247310038181
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.35825329273939,
+        33.75243323712974
+      ]
+    }
+  },
+  {
+    "id": 2499,
+    "name": "GEORGIA TECH - CLOUGH COMMONS ",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "261 4th Street Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 6,
+    "available_bikes": 6,
+    "free_racks": 4,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.39637452363966,
+            33.77530324255382
+          ],
+          [
+            -84.39638257026672,
+            33.77522075038576
+          ],
+          [
+            -84.39617335796355,
+            33.77521183230878
+          ],
+          [
+            -84.39617067575455,
+            33.77531884917128
+          ],
+          [
+            -84.39637452363966,
+            33.77530324255382
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.39627662301064,
+        33.77526534074003
+      ]
+    }
+  },
+  {
+    "id": 2505,
+    "name": "MARTA - KING MEMORIAL ",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "386, Decatur Street Southeast, Sweet Auburn, Edgewood, Atlanta, Georgia",
+    "distance": null,
+    "current_bikes": 4,
+    "available_bikes": 4,
+    "free_racks": 6,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.37638133764267,
+            33.750188512910874
+          ],
+          [
+            -84.37636524438858,
+            33.75010376639428
+          ],
+          [
+            -84.37601119279861,
+            33.750179592228854
+          ],
+          [
+            -84.37601655721664,
+            33.75026656883887
+          ],
+          [
+            -84.37638133764267,
+            33.750188512910874
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.37619626522064,
+        33.75018516761658
+      ]
+    }
+  },
+  {
+    "id": 2506,
+    "name": "MARTA - PEACHTREE CENTER ",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "133 Carnegie Way Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 5,
+    "available_bikes": 5,
+    "free_racks": 5,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.38788264989853,
+            33.75794047865354
+          ],
+          [
+            -84.38784375786781,
+            33.75794605357523
+          ],
+          [
+            -84.38784912228584,
+            33.75802856237395
+          ],
+          [
+            -84.38789203763008,
+            33.75802856237395
+          ],
+          [
+            -84.38788264989853,
+            33.75794047865354
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38786789774895,
+        33.757984520513745
+      ]
+    }
+  },
+  {
+    "id": 2509,
+    "name": "MARTA - ARTS CENTER ",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "2-48 Arts Center Way Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 7,
+    "available_bikes": 7,
+    "free_racks": 3,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.3868499994278,
+            33.78935250628501
+          ],
+          [
+            -84.38680708408356,
+            33.789096153504175
+          ],
+          [
+            -84.38642889261246,
+            33.78914519496509
+          ],
+          [
+            -84.38646376132964,
+            33.78939486014886
+          ],
+          [
+            -84.3868499994278,
+            33.78935250628501
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.38663944602013,
+        33.78924550682652
+      ]
+    }
+  },
+  {
+    "id": 2510,
+    "name": "STATE & 11TH",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "372-398 11th Street Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 10,
+    "available_bikes": 10,
+    "free_racks": 0,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.39897894859314,
+            33.78334919145214
+          ],
+          [
+            -84.39898431301117,
+            33.78329568805393
+          ],
+          [
+            -84.39894407987595,
+            33.78325778979332
+          ],
+          [
+            -84.39891457557678,
+            33.783317981140584
+          ],
+          [
+            -84.39897894859314,
+            33.78334919145214
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.39894944429398,
+        33.78330349062273
+      ]
+    }
+  },
+  {
+    "id": 2511,
+    "name": "14TH & HOWELL MILL",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "720-742 14th Street Northwest, Atlanta",
+    "distance": null,
+    "current_bikes": 4,
+    "available_bikes": 4,
+    "free_racks": 6,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.4111105799675,
+            33.78591557366272
+          ],
+          [
+            -84.41111862659453,
+            33.785833091715055
+          ],
+          [
+            -84.4107350707054,
+            33.78583086247212
+          ],
+          [
+            -84.41072434186935,
+            33.78594678302761
+          ],
+          [
+            -84.4111105799675,
+            33.78591557366272
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.4109120965004,
+        33.78583532095794
+      ]
+    }
+  },
+  {
+    "id": 2512,
+    "name": "MARTA - INMAN PARK ",
+    "racks_amount": 12,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "1030 DeKalb Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 2,
+    "available_bikes": 2,
+    "free_racks": 9,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.35382932424545,
+            33.7575455293719
+          ],
+          [
+            -84.35378104448318,
+            33.75746079012705
+          ],
+          [
+            -84.3536227941513,
+            33.75757228911601
+          ],
+          [
+            -84.35370057821274,
+            33.757623578602264
+          ],
+          [
+            -84.35382932424545,
+            33.7575455293719
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.35372605919838,
+        33.75754218436465
+      ]
+    }
+  },
+  {
+    "id": 2513,
+    "name": "VIRGINIA-HIGHLAND",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "1020 North Highland Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 9,
+    "available_bikes": 9,
+    "free_racks": 1,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.35439795255661,
+            33.78246638110743
+          ],
+          [
+            -84.35436576604843,
+            33.78246861043795
+          ],
+          [
+            -84.35438454151154,
+            33.78258453554467
+          ],
+          [
+            -84.35443013906479,
+            33.78258007688964
+          ],
+          [
+            -84.35439795255661,
+            33.78246638110743
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.35439795255661,
+        33.78252545832605
+      ]
+    }
+  },
+  {
+    "id": 2514,
+    "name": "ATKINS PARK",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "1043 Saint Charles Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 7,
+    "available_bikes": 7,
+    "free_racks": 2,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.35333579778671,
+            33.77543478395482
+          ],
+          [
+            -84.35333579778671,
+            33.775405800273646
+          ],
+          [
+            -84.35316413640976,
+            33.77541471833043
+          ],
+          [
+            -84.35317486524582,
+            33.77545484957447
+          ],
+          [
+            -84.35333579778671,
+            33.77543478395482
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.35324996709824,
+        33.77543032492406
+      ]
+    }
+  },
+  {
+    "id": 2518,
+    "name": "JACKSON & CHAMBERLAIN",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "401-407 Chamberlain Street Southeast, Atlanta",
+    "distance": null,
+    "current_bikes": 8,
+    "available_bikes": 8,
+    "free_racks": 2,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.37434822320938,
+            33.75379239251879
+          ],
+          [
+            -84.37434554100037,
+            33.753738870662424
+          ],
+          [
+            -84.37414705753326,
+            33.75373441050622
+          ],
+          [
+            -84.37414705753326,
+            33.753785702288575
+          ],
+          [
+            -84.37434822320938,
+            33.75379239251879
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.37424764037132,
+        33.7537634015125
+      ]
+    }
+  },
+  {
+    "id": 2519,
+    "name": "RANDOLPH & EDGEWOOD",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "1-11 Randolph Street Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 9,
+    "available_bikes": 9,
+    "free_racks": 0,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.36802759766579,
+            33.754316702843404
+          ],
+          [
+            -84.36805307865141,
+            33.75431893290639
+          ],
+          [
+            -84.3680490553379,
+            33.75440033016565
+          ],
+          [
+            -84.36802759766579,
+            33.754404790287225
+          ],
+          [
+            -84.36802759766579,
+            33.754316702843404
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.36804033815861,
+        33.75436074656531
+      ]
+    }
+  },
+  {
+    "id": 2520,
+    "name": "EDGEWOOD & EASTSIDE BELTLINE",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "BeltLine (Under Construction), Inman Park, Edgewood, Atlanta, Georgia",
+    "distance": null,
+    "current_bikes": 8,
+    "available_bikes": 8,
+    "free_racks": 2,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.36561964452267,
+            33.754312364673865
+          ],
+          [
+            -84.36561830341816,
+            33.7543084620633
+          ],
+          [
+            -84.36558611690998,
+            33.754311249642285
+          ],
+          [
+            -84.36558745801449,
+            33.75432072741018
+          ],
+          [
+            -84.36561964452267,
+            33.754312364673865
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.36560288071632,
+        33.75431459473674
+      ]
+    }
+  },
+  {
+    "id": 2521,
+    "name": "5TH & ARGONNE",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "764 Argonne Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 7,
+    "available_bikes": 7,
+    "free_racks": 3,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.37770634889603,
+            33.77567780058804
+          ],
+          [
+            -84.37771171331406,
+            33.77558862025225
+          ],
+          [
+            -84.37767148017883,
+            33.77558639074268
+          ],
+          [
+            -84.37766879796982,
+            33.77568003009525
+          ],
+          [
+            -84.37770634889603,
+            33.77567780058804
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.37769025564194,
+        33.77563321041897
+      ]
+    }
+  },
+  {
+    "id": 2522,
+    "name": "LITTLE FIVE POINTS",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "1111 Euclid Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 8,
+    "available_bikes": 8,
+    "free_racks": 2,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.35096740722656,
+            33.764034522715036
+          ],
+          [
+            -84.35092449188232,
+            33.764003305366394
+          ],
+          [
+            -84.35069650411606,
+            33.76417054103
+          ],
+          [
+            -84.35074478387833,
+            33.764217366957304
+          ],
+          [
+            -84.35096740722656,
+            33.764034522715036
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.35083195567131,
+        33.76411033616185
+      ]
+    }
+  },
+  {
+    "id": 2523,
+    "name": "INMAN PARK",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "261-279 Elizabeth Street Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 8,
+    "available_bikes": 8,
+    "free_racks": 1,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.35795724391937,
+            33.76162406398034
+          ],
+          [
+            -84.35788482427597,
+            33.76164413283431
+          ],
+          [
+            -84.35787945985793,
+            33.76182475230853
+          ],
+          [
+            -84.35791164636612,
+            33.76182475230853
+          ],
+          [
+            -84.35795724391937,
+            33.76162406398034
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.35791835188866,
+        33.76172440814443
+      ]
+    }
+  },
+  {
+    "id": 2524,
+    "name": "INMAN PARK VILLAGE",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "250 North Highland Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 5,
+    "available_bikes": 5,
+    "free_racks": 4,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.36008289456367,
+            33.76182945593558
+          ],
+          [
+            -84.36007216572762,
+            33.761803812454566
+          ],
+          [
+            -84.35994610190392,
+            33.7618617890094
+          ],
+          [
+            -84.35995548963545,
+            33.7618985818027
+          ],
+          [
+            -84.36008289456367,
+            33.76182945593558
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.3600144982338,
+        33.761851197128635
+      ]
+    }
+  },
+  {
+    "id": 2542,
+    "name": "GRANT PARK ",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "681 Cherokee Avenue Southeast, Atlanta",
+    "distance": null,
+    "current_bikes": 8,
+    "available_bikes": 8,
+    "free_racks": 2,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.37363207340239,
+            33.73597470318542
+          ],
+          [
+            -84.37363341450691,
+            33.735897749521094
+          ],
+          [
+            -84.37360793352127,
+            33.73589551897906
+          ],
+          [
+            -84.37360525131226,
+            33.73597470318542
+          ],
+          [
+            -84.37363207340239,
+            33.73597470318542
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.37361933290958,
+        33.73593511108224
+      ]
+    }
+  },
+  {
+    "id": 2543,
+    "name": "HIGHLAND - FREEDOM TRAIL",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "666 Highland Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 12,
+    "available_bikes": 12,
+    "free_racks": 0,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.36564981937408,
+            33.76138546724541
+          ],
+          [
+            -84.36564713716507,
+            33.76134086965117
+          ],
+          [
+            -84.36545401811598,
+            33.76133195012955
+          ],
+          [
+            -84.36545401811598,
+            33.761389927003556
+          ],
+          [
+            -84.36564981937408,
+            33.76138546724541
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.36555191874504,
+        33.761360938566554
+      ]
+    }
+  },
+  {
+    "id": 2544,
+    "name": "PONCE - HIGHLAND",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "698 North Highland Avenue Northeast, Atlanta",
+    "distance": null,
+    "current_bikes": 5,
+    "available_bikes": 5,
+    "free_racks": 5,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.35258746147156,
+            33.773461641732304
+          ],
+          [
+            -84.35260355472563,
+            33.77320970052707
+          ],
+          [
+            -84.35252308845519,
+            33.77322530752591
+          ],
+          [
+            -84.35253113508224,
+            33.77346610086201
+          ],
+          [
+            -84.35258746147156,
+            33.773461641732304
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.35256332159041,
+        33.77333790069454
+      ]
+    }
+  },
+  {
+    "id": 2550,
+    "name": "PARK & MEMORIAL",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "200-268 Park Avenue Southeast, Atlanta",
+    "distance": null,
+    "current_bikes": 3,
+    "available_bikes": 3,
+    "free_racks": 7,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.36967849731445,
+            33.74656886998089
+          ],
+          [
+            -84.36962485313416,
+            33.746566639716335
+          ],
+          [
+            -84.36961144208908,
+            33.746691534441915
+          ],
+          [
+            -84.36965435743332,
+            33.74669376470322
+          ],
+          [
+            -84.36967849731445,
+            33.74656886998089
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.36964496970177,
+        33.74663020220977
+      ]
+    }
+  },
+  {
+    "id": 2551,
+    "name": "CHEROKEE & WOODWARD",
+    "racks_amount": 10,
+    "description": "",
+    "network_id": 31,
+    "has_kiosk": false,
+    "public": false,
+    "display_method": "auto",
+    "collapse_bikes": true,
+    "area_id": 234,
+    "address": "428, Woodward Avenue Southeast, Cabbage Town, Edgewood, Atlanta, Georgia",
+    "distance": null,
+    "current_bikes": 7,
+    "available_bikes": 7,
+    "free_racks": 1,
+    "sponsored": false,
+    "sponsored_bikes": 0,
+    "polygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -84.373379945755,
+            33.745661147516245
+          ],
+          [
+            -84.373379945755,
+            33.745565245073095
+          ],
+          [
+            -84.37332361936569,
+            33.745565245073095
+          ],
+          [
+            -84.3733263015747,
+            33.74566783838038
+          ],
+          [
+            -84.373379945755,
+            33.745661147516245
+          ]
+        ]
+      ]
+    },
+    "middle_point": {
+      "type": "Point",
+      "coordinates": [
+        -84.37335178256035,
+        33.74561654172673
+      ]
+    }
+  }
+]

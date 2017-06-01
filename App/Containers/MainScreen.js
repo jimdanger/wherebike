@@ -13,32 +13,49 @@ import styles from './Styles/MainScreenStyles'
 
 export default class MainScreen extends React.Component {
 
-
   api = {}
 
   constructor (props) {
     super(props)
-    // this.state = {
-    //   visibleHeight: Metrics.screenHeight
-    // }
-
+    this.state = {
+      hubs: [],
+      displaytext: 'sometext'
+    }
     this.api = API.create()
+    this.getHubs = this.getHubs.bind(this)
   }
 
+  componentDidMount() {
+      this.getHubs()
+  }
 
-  getHubs = () =>  {
+  getHubs() {
+    this.callGetHubs()
+  }
 
+  callGetHubs = () => {
     this.api['getHubs'].apply(this, ['31']).then((result) => {
-      console.log(FJSON.plain(result.data))
-      // this.showResult(result, label || `${endpoint}(${args.join(', ')})`)
+      this.processGetHubsAPIResult(result)
     })
-    console.log('bar')
+  }
+
+  processGetHubsAPIResult = (response) => {
+    if (response.ok) {
+      console.log(FJSON.plain(response.data))
+      // debugger;
+      this.setState({
+          hubs: response.data,
+          displaytext : response.data[0].address
+      })
+
+      console.log(this.state.hubs[0].address)
+
+    } else {
+      // TODO: do something about the error.
+    }
   }
 
   render () {
-
-    {this.getHubs()}
-
     return (
 
       <View style={styles.mainContainer}>
@@ -53,7 +70,7 @@ export default class MainScreen extends React.Component {
 
             {/* // how to make this dynamic? */}
             <Text style={styles.sectionText}>
-              50m
+              {this.state.displaytext}
             </Text>
 
           </View>
