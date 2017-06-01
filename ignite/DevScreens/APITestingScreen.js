@@ -15,7 +15,8 @@ const endpoints = [
   { label: 'Github Root', endpoint: 'getRoot' },
   { label: 'Github Rate Limit', endpoint: 'getRate' },
   { label: 'Search User (gantman)', endpoint: 'getUser', args: ['gantman'] },
-  { label: 'Search User (skellock)', endpoint: 'getUser', args: ['skellock'] }
+  { label: 'Search User (skellock)', endpoint: 'getUser', args: ['skellock'] },
+  { label: 'Bikes', endpoint: 'getHubs',  args: ['31'] } // TODO: hardcod warning. 31 is atlanta area. Make dynamic.
 ]
 
 export default class APITestingScreen extends React.Component {
@@ -34,6 +35,7 @@ export default class APITestingScreen extends React.Component {
     this.refs.container.scrollTo({x: 0, y: 0, animated: true})
     if (response.ok) {
       this.refs.result.setState({message: FJSON.plain(response.data), title: title})
+      console.log(FJSON.plain(response.data))
     } else {
       this.refs.result.setState({message: `${response.problem} - ${response.status}`, title: title})
     }
