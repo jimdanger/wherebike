@@ -16,7 +16,7 @@ const endpoints = [
   { label: 'Github Rate Limit', endpoint: 'getRate' },
   { label: 'Search User (gantman)', endpoint: 'getUser', args: ['gantman'] },
   { label: 'Search User (skellock)', endpoint: 'getUser', args: ['skellock'] },
-  { label: 'Bikes', endpoint: 'getHubs',  args: ['31'] } // TODO: hardcod warning. 31 is atlanta area. Make dynamic.
+  { label: 'Bikes', endpoint: 'getHubs',  args: ['31'] } // TODO: hardcode warning. 31 is atlanta area. Make dynamic.
 ]
 
 export default class APITestingScreen extends React.Component {

@@ -5,19 +5,23 @@ import DevscreensButton from '../../ignite/DevScreens/DevscreensButton.js'
 import { Images } from '../Themes'
 
 // Styles
-import styles from './Styles/LaunchScreenStyles'
+import styles from './Styles/MainScreenStyles'
 
-export default class LaunchScreen extends React.Component {
+export default class MainScreen extends React.Component {
+
+  foo = () =>  {
+    console.log('bar')
+  }
+
   render () {
-    return (
 
-      // todo: call api here?
+    {this.foo()}
+
+
+    return (
 
 
       <View style={styles.mainContainer}>
-
-        <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
-
         <ScrollView style={styles.container}>
 
           <View style={styles.centered}>
@@ -25,10 +29,11 @@ export default class LaunchScreen extends React.Component {
           </View>
 
           <View style={styles.section} >
-            <Image source={Images.ready} />
+            {/* <Image source={Images.ready} /> */}
 
+            {/* // how to make this dynamic? */}
             <Text style={styles.sectionText}>
-              This probably isn't what your app is going to look like. Unless your designer handed you this screen and, in that case, congrats! You're ready to ship. For everyone else, this is where you'll see a live preview of your fully functioning app using Ignite.
+              50m
             </Text>
 
           </View>

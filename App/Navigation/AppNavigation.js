@@ -1,6 +1,7 @@
 import { StackNavigator } from 'react-navigation'
 import LaunchScreen from '../Containers/LaunchScreen'
 import LoginScreen from '../Containers/LoginScreen'
+import MainScreen from '../Containers/MainScreen'
 
 import styles from './Styles/NavigationStyles'
 
@@ -10,11 +11,15 @@ const PrimaryNav = StackNavigator({
   LoginScreen: {
     screen: LoginScreen,
     navigationOptions: { title: 'Login' }
+  },
+  MainScreen: {
+    screen: MainScreen,
+    navigationOptions: { title: 'Where Bike' }
   }
 }, {
   // Default config for all screens
   headerMode: 'none',
-  initialRouteName: 'LaunchScreen',
+  initialRouteName: 'MainScreen',
   navigationOptions: {
     headerStyle: styles.header
   }
