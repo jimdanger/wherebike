@@ -2,7 +2,6 @@
 import apisauce from 'apisauce'
 
 // our "constructor"
-// const create = (baseURL = 'https://api.github.com/') => {
 const create = (baseURL = 'https://map.socialbicycles.com/') => {
   // ------
   // STEP 1
