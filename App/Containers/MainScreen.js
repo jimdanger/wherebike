@@ -33,13 +33,6 @@ export default class MainScreen extends React.Component {
       this.getMockHubs()
   }
 
-  getMockHubs(){
-    this.setState({
-        hubs: FixtureAPI.getHubs(),
-        displaytext : FixtureAPI.getHubs().data[2].address
-    })
-  }
-
   getHubs() {
     this.callGetHubs()
   }
@@ -50,17 +43,22 @@ export default class MainScreen extends React.Component {
     })
   }
 
+  getMockHubs(){
+    this.processGetHubsAPIResult(FixtureAPI.getHubs())
+  }
+
   processGetHubsAPIResult = (response) => {
     if (response.ok) {
       console.log(FJSON.plain(response.data))
-      // debugger;
+
       this.setState({
           hubs: response.data,
           displaytext : response.data[0].address
+      }, ()=> {
+        console.log(this.state.hubs[0].address)
+        // here is where we can sort, store, calculate distance, 
+        // display info, and otherwise do things with the hubs.
       })
-
-      console.log(this.state.hubs[0].address)
-
     } else {
       // TODO: do something about the error.
     }
