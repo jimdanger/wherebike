@@ -33,8 +33,8 @@ export default class MainScreen extends React.Component {
       wbMapRegion: { // Atlanta
           latitude: 33.7627864,
           longitude: -84.3829767,
-          latitudeDelta: 0.2922,
-          longitudeDelta: 0.2421,
+          latitudeDelta: 0.3922,
+          longitudeDelta: 0.3421,
       },
       userLat: null,
       userLong: null,
@@ -111,8 +111,8 @@ export default class MainScreen extends React.Component {
         wbMapRegion: {
             latitude: coords.latitude,
             longitude: coords.longitude,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
+            latitudeDelta: 0.2922,
+            longitudeDelta: 0.2421,
         },
       });
     }
