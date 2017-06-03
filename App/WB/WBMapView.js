@@ -13,17 +13,13 @@ export class WBMapView extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      text : 'useless example text',
+      text : 'useless example text'
     };
   }
 
   onRegionChange(region) {
-    // debugger;
-    // do something if you need to?
-    console.log(region)
-
+    // do something maybe?
   }
-
 
   render () {
 
@@ -35,6 +31,16 @@ export class WBMapView extends Component {
         region={this.props.region}
         onRegionChange={this.onRegionChange}
         showsUserLocation
+        // provider ={'google'} // TODO: uncomment and fix error - import google maps
+        scrollEnabled={this.props.scrollEnabled}
+
+        showsMyLocationButton
+        onPress={() => {console.log('triggering onPress')}}
+        onPanDrag={() => {
+          this.props.onPanDragCallback();
+          console.log('triggering onPanDrag')
+        }}
+        // followUserLocation = {false}
 
       />
     );

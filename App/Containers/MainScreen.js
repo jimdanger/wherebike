@@ -18,7 +18,7 @@ import styles from './Styles/MainScreenStyles'
 export default class MainScreen extends React.Component {
 
   api = {}
-
+  // var shouldMapFollowUser = true;
 
   // mapregion = region: { // SF
   //   latitude: 37.78825,
@@ -40,11 +40,13 @@ export default class MainScreen extends React.Component {
       },
       userLat: null,
       userLong: null,
-      geolocationError: null
+      geolocationError: null,
+      shouldMapFollowUser : true,
+      isMapScrollEnabled : false // see .... TODO:
     }
 
     this.api = API.create()
-    this.getHubs = this.getHubs.bind(this)
+    // this.getHubs = this.getHubs.bind(this)
   }
 
   componentDidMount() {
@@ -108,13 +110,22 @@ export default class MainScreen extends React.Component {
   }
 
   updateRegion = (coords) => {
+    if (this.state.shouldMapFollowUser){
+      this.setState({
+        wbMapRegion: {
+            latitude: coords.latitude,
+            longitude: coords.longitude,
+            latitudeDelta: 0.0922,
+            longitudeDelta: 0.0421,
+        },
+      });
+    }
+  }
+
+  stopFollowingUser = () => {
     this.setState({
-      wbMapRegion: {
-          latitude: coords.latitude,
-          longitude: coords.longitude,
-          latitudeDelta: 0.0922,
-          longitudeDelta: 0.0421,
-      },
+      shouldMapFollowUser: false,
+      isMapScrollEnabled: true
     });
   }
 
@@ -140,6 +151,10 @@ export default class MainScreen extends React.Component {
             <WBMapView
               hubs={this.state.hubs}
               region={this.state.wbMapRegion}
+              onPanDragCallback={stopFollowingUser => {
+                this.stopFollowingUser()
+              }}
+              scrollEnabled= {this.state.isMapScrollEnabled}
             />
           </View>
 
