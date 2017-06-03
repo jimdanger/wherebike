@@ -5,7 +5,8 @@ import FixtureAPI from '../../App/Services/FixtureApi'
 
 
 import { Images } from '../Themes'
-import MapView from 'react-native-maps'
+// import MapView from 'react-native-maps'
+import { WBMapView } from '../../App/WB/WBMapView'
 
 // For API
 import API from '../../App/Services/Api'
@@ -18,12 +19,30 @@ export default class MainScreen extends React.Component {
 
   api = {}
 
+
+  // mapregion = region: { // SF
+  //   latitude: 37.78825,
+  //   longitude: -122.4324,
+  //   latitudeDelta: 0.0922,
+  //   longitudeDelta: 0.0421,
+  // };
+
   constructor (props) {
     super(props)
     this.state = {
       hubs: [],
-      displaytext: 'sometext'
+      displaytext: 'sometext',
+      wbMapRegion: {
+          latitude: 33.7627864,
+          longitude: -84.3829767,
+          latitudeDelta: 0.2922,
+          longitudeDelta: 0.2421,
+      },
+      userLat: null,
+      userLong: null,
+      geolocationError: null
     }
+
     this.api = API.create()
     this.getHubs = this.getHubs.bind(this)
   }
@@ -31,6 +50,7 @@ export default class MainScreen extends React.Component {
   componentDidMount() {
       // this.getHubs()
       this.getMockHubs()
+      this.getUserPosition()
   }
 
   getHubs() {
@@ -56,47 +76,57 @@ export default class MainScreen extends React.Component {
           displaytext : response.data[0].address
       }, ()=> {
         console.log(this.state.hubs[0].address)
-        // here is where we can sort, store, calculate distance, 
-        // display info, and otherwise do things with the hubs.
       })
     } else {
       // TODO: do something about the error.
     }
   }
 
+  getUserPosition() {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        this.setState({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+          error: null,
+        });
+
+      },
+      (error) => this.setState({ error: error.message }),
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
+    );
+  }
+
   render () {
+
+
     return (
 
       <View style={styles.mainContainer}>
-        <ScrollView style={styles.container}>
+        <View style={styles.container}>
 
           <View style={styles.centered}>
             <Image source={Images.launch} style={styles.logo} />
           </View>
 
           <View style={styles.section} >
-            {/* <Image source={Images.ready} /> */}
-            {/* // how to make this dynamic? */}
+
             <Text style={styles.sectionText}>
               {this.state.displaytext}
             </Text>
+
           </View>
 
-          <View style={styles.section} >
+          <View style={styles.mapContainer} >
+            <WBMapView
+              hubs={this.state.hubs}
+              region={this.state.wbMapRegion}
 
-            <MapView
-              style={styles.map}
-              initialRegion={{
-                latitude: 37.78825,
-                longitude: -122.4324,
-                latitudeDelta: 0.0922,
-                longitudeDelta: 0.0421,
-              }}
             />
           </View>
 
           {/* <DevscreensButton /> */}
-        </ScrollView>
+        </View>
       </View>
     )
   }

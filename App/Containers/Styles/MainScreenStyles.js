@@ -9,6 +9,12 @@ export default StyleSheet.create({
     backgroundColor : '#177E89'
     // https://coolors.co/177e89-084c61-db3a34-ffc857-323031
   },
+  mapContainer: {
+    paddingBottom: Metrics.baseMargin,
+    flex: 1,
+    backgroundColor : '#177E89'
+    // https://coolors.co/177e89-084c61-db3a34-ffc857-323031
+  },
   logo: {
     marginTop: Metrics.doubleSection,
     height: Metrics.images.logo,
@@ -17,9 +23,5 @@ export default StyleSheet.create({
   },
   centered: {
     alignItems: 'center'
-  },
-  map: {
-    ...StyleSheet.absoluteFillObject,
-
   }
 })
