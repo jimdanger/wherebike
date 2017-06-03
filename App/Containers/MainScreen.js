@@ -51,6 +51,7 @@ export default class MainScreen extends React.Component {
       // this.getHubs()
       this.getMockHubs()
       this.getUserPosition()
+      this.startWatchingUserPosition()
   }
 
   getHubs() {
@@ -85,6 +86,7 @@ export default class MainScreen extends React.Component {
   getUserPosition() {
     navigator.geolocation.getCurrentPosition(
       (position) => {
+        this.updateRegion(position.coords);
         this.setState({
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
@@ -97,9 +99,26 @@ export default class MainScreen extends React.Component {
     );
   }
 
+  startWatchingUserPosition() {
+    navigator.geolocation.watchPosition((position) => {
+      console.log(position.coords)
+      this.updateRegion(position.coords);
+   });
+
+  }
+
+  updateRegion = (coords) => {
+    this.setState({
+      wbMapRegion: {
+          latitude: coords.latitude,
+          longitude: coords.longitude,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+      },
+    });
+  }
+
   render () {
-
-
     return (
 
       <View style={styles.mainContainer}>
@@ -121,7 +140,6 @@ export default class MainScreen extends React.Component {
             <WBMapView
               hubs={this.state.hubs}
               region={this.state.wbMapRegion}
-
             />
           </View>
 

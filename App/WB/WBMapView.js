@@ -18,8 +18,10 @@ export class WBMapView extends Component {
   }
 
   onRegionChange(region) {
-    debugger;
-    this.setState({ region });
+    // debugger;
+    // do something if you need to?
+    console.log(region)
+
   }
 
 
@@ -30,8 +32,10 @@ export class WBMapView extends Component {
     return (
       <MapView.Animated
         style={styles.map}
-        initialRegion={this.props.region}
+        region={this.props.region}
+        onRegionChange={this.onRegionChange}
         showsUserLocation
+
       />
     );
   }
