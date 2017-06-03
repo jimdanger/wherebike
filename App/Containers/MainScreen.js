@@ -18,8 +18,6 @@ import styles from './Styles/MainScreenStyles'
 export default class MainScreen extends React.Component {
 
   api = {}
-  // var shouldMapFollowUser = true;
-
   // mapregion = region: { // SF
   //   latitude: 37.78825,
   //   longitude: -122.4324,
@@ -32,7 +30,7 @@ export default class MainScreen extends React.Component {
     this.state = {
       hubs: [],
       displaytext: 'sometext',
-      wbMapRegion: {
+      wbMapRegion: { // Atlanta
           latitude: 33.7627864,
           longitude: -84.3829767,
           latitudeDelta: 0.2922,
@@ -42,22 +40,21 @@ export default class MainScreen extends React.Component {
       userLong: null,
       geolocationError: null,
       shouldMapFollowUser : true,
-      isMapScrollEnabled : false // see .... TODO:
+      isMapScrollEnabled : false // see commit message for more details.
     }
 
     this.api = API.create()
-    // this.getHubs = this.getHubs.bind(this)
   }
 
   componentDidMount() {
-      // this.getHubs()
-      this.getMockHubs()
+      this.getHubs()
       this.getUserPosition()
       this.startWatchingUserPosition()
   }
 
   getHubs() {
-    this.callGetHubs()
+    // this.callGetHubs()
+    this.getMockHubs()
   }
 
   callGetHubs = () => {
@@ -106,7 +103,6 @@ export default class MainScreen extends React.Component {
       console.log(position.coords)
       this.updateRegion(position.coords);
    });
-
   }
 
   updateRegion = (coords) => {
@@ -158,7 +154,6 @@ export default class MainScreen extends React.Component {
             />
           </View>
 
-          {/* <DevscreensButton /> */}
         </View>
       </View>
     )

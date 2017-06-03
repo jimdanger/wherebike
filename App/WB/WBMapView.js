@@ -31,17 +31,12 @@ export class WBMapView extends Component {
         region={this.props.region}
         onRegionChange={this.onRegionChange}
         showsUserLocation
-        // provider ={'google'} // TODO: uncomment and fix error - import google maps
+        // provider ={'google'} // TODO: uncomment and fix error - import google maps to ios
         scrollEnabled={this.props.scrollEnabled}
-
-        showsMyLocationButton
         onPress={() => {console.log('triggering onPress')}}
         onPanDrag={() => {
           this.props.onPanDragCallback();
-          console.log('triggering onPanDrag')
         }}
-        // followUserLocation = {false}
-
       />
     );
   }
