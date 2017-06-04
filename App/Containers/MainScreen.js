@@ -34,9 +34,10 @@ export default class MainScreen extends React.Component {
       shouldMapFollowUser : true,
       isMapScrollEnabled : false, // see commit message for details on why this is needed.
       headingIsSupported: false,
-      compassHeading: '80 deg'
+      arrowRotationDegrees: '0 deg',
+      compassHeading: 0,
+      rhumbLineBearing: 0
     }
-
     this.api = API.create()
   }
 
@@ -85,17 +86,36 @@ export default class MainScreen extends React.Component {
       console.log(position.coords);
       this.updateRegion(position.coords);
       let sortedHubs = this.sortHubsByDistanceFromUser(this.state.hubs, position);
-      this.updateDisplayToPointToClosestHub(sortedHubs);
-
+      let chosenHub = 0 // in the future, user will be able to select more than just the closest one.
+      this.updateDisplayToChosenHub(position, sortedHubs, chosenHub);
    });
   }
 
-  updateDisplayToPointToClosestHub= (sortedHubs) => {
+  updateDisplayToChosenHub = (position, sortedHubs, index) => {
+
+    let rhumbLineBearing = geolib.getRhumbLineBearing(
+      position.coords,
+      {latitude: sortedHubs[index].middle_point.coordinates[1],
+        longitude: sortedHubs[index].middle_point.coordinates[0]}
+    );
+
     this.setState({
-      bikeHubName: sortedHubs[0].name,
-      distance: sortedHubs[0].distance,
-      availableBikes: sortedHubs[0].available_bikes,
-      freeRacks: sortedHubs[0].free_racks,
+      bikeHubName: sortedHubs[index].name,
+      distance: sortedHubs[index].distance,
+      availableBikes: sortedHubs[index].available_bikes,
+      freeRacks: sortedHubs[index].free_racks,
+      rhumbLineBearing: rhumbLineBearing,
+    }, ()=> {
+      this.setArrow()
+    });
+  }
+
+  setArrow = () => {
+    console.log('setArrow called');
+
+    let degrees = this.state.rhumbLineBearing - this.state.compassHeading
+    this.setState({
+      arrowRotationDegrees: degrees + ' deg'
     });
 
   }
@@ -109,7 +129,6 @@ export default class MainScreen extends React.Component {
             latitudeDelta: 0.0122,
             longitudeDelta: 0.0011,
         },
-
       });
     }
   }
@@ -130,13 +149,15 @@ export default class MainScreen extends React.Component {
     })
 
     DeviceEventEmitter.addListener('headingUpdated', data => {
-      console.log('New heading is:', data.heading);
-
       this.setState({
-        compassHeading: data.heading + ' deg',
+        compassHeading: data.heading,
+      }, ()=> {
+        this.setArrow()
       })
     });
   }
+
+
 
   sortHubsByDistanceFromUser = (hubs, userPosition) => { // TODO: write a test for this function.
 
@@ -159,7 +180,6 @@ export default class MainScreen extends React.Component {
     return sortedHubs
   }
 
-
   render () {
     return (
 
@@ -167,8 +187,8 @@ export default class MainScreen extends React.Component {
         <View style={styles.container}>
 
           <View style={styles.centered}>
-              <View style={{transform:[{rotate: this.state.compassHeading}]}}>
-            <Image source={Images.launch} style={styles.logo} />
+              <View style={{transform:[{rotate: this.state.arrowRotationDegrees}]}}>
+            <Image source={Images.arrow} style={styles.logo} />
             </View>
           </View>
 
@@ -177,6 +197,8 @@ export default class MainScreen extends React.Component {
             <Text style={styles.sectionText}>
               {this.state.bikeHubName}
             </Text>
+
+            {/*
             <Text style={styles.sectionText}>
               {this.state.distance + "m"}
             </Text>
@@ -186,6 +208,7 @@ export default class MainScreen extends React.Component {
             <Text style={styles.sectionText}>
               {'Free racks: ' + this.state.freeRacks}
             </Text>
+             */}
 
           </View>
 
