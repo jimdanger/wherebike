@@ -14,23 +14,6 @@ export class WBMapView extends Component {
     super(props);
     this.state = {
       text : 'useless example text',
-
-      markers: [{
-          title: 'hello',
-          coordinates: {
-            latitude: 37.700668, //37.700668, -122.465280
-            longitude: -122.465280
-          },
-        },
-        {
-          title: 'world',
-          coordinates: {
-            latitude: 3.149771,
-            longitude: 101.655449
-          },
-        }]
-
-
     };
   }
 
@@ -39,8 +22,6 @@ export class WBMapView extends Component {
   }
 
   render () {
-
-    // debugger;
 
     return (
       <MapView.Animated
@@ -55,19 +36,19 @@ export class WBMapView extends Component {
           this.props.onPanDragCallback();
         }}
       >
-        {/* // annotations: */}
-          {this.state.markers.map(marker => (
-              <MapView.Marker
-                key={marker.title} // to silence warning. "Warning: Each child in an array or iterator shoul dhave unique 'key' prop."
-                coordinate={marker.coordinates}
-                title={marker.title}
-              />
-            ))}
-
-
+        
+        {this.props.hubs.map(hub => (
+          <MapView.Marker
+            key={hub.name} // to silence warning. "Warning: Each child in an array or iterator shoul dhave unique 'key' prop."
+            coordinate={{
+              longitude: hub.middle_point.coordinates[0],
+              latitude: hub.middle_point.coordinates[1]
+            }}
+            title={hub.name}
+            description={'Available bikes: ' + hub.available_bikes + '. Free racks: ' + hub.free_racks}
+          />
+        ))}
         </MapView.Animated>
-
-
     );
   }
 }

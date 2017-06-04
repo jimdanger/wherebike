@@ -111,8 +111,8 @@ export default class MainScreen extends React.Component {
         wbMapRegion: {
             latitude: coords.latitude,
             longitude: coords.longitude,
-            latitudeDelta: 0.2922,
-            longitudeDelta: 0.2421,
+            latitudeDelta: 0.0122,
+            longitudeDelta: 0.0011,
         },
       });
     }
