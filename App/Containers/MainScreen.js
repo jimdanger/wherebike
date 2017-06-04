@@ -14,13 +14,6 @@ export default class MainScreen extends React.Component {
 
   api = {}
 
-  // mapregion = region: { // SF
-  //   latitude: 37.78825,
-  //   longitude: -122.4324,
-  //   latitudeDelta: 0.0922,
-  //   longitudeDelta: 0.0421,
-  // };
-
   constructor (props) {
     super(props)
     this.state = {
@@ -85,13 +78,11 @@ export default class MainScreen extends React.Component {
     }
   }
 
-
   startWatchingUserPosition() {
     navigator.geolocation.watchPosition((position) => {
-      console.log(position.coords)
+      console.log(position.coords);
       this.updateRegion(position.coords);
-
-      console.log(this.sortHubsByDistanceFromUser(this.state.hubs, position));
+      this.sortHubsByDistanceFromUser(this.state.hubs, position);
 
    });
   }
@@ -135,8 +126,8 @@ export default class MainScreen extends React.Component {
     });
   }
 
-  // TODO: write a test for this function.
-  sortHubsByDistanceFromUser = (hubs, userPosition) => {
+
+  sortHubsByDistanceFromUser = (hubs, userPosition) => { // TODO: write a test for this function.
 
     // create array of object that 'geolib.orderByDistance' expects:
     var spots = []
@@ -150,10 +141,22 @@ export default class MainScreen extends React.Component {
     // use the new sorted array and its key property to sort actual hubs.
     var sortedHubs = []
     for (var i = 0; i < orderedHubKeys.length; i++) {
-        sortedHubs.push(hubs[orderedHubKeys[i].key]);
+        let hub = hubs[orderedHubKeys[i].key]
+        hub.distance = orderedHubKeys[i].distance
+        sortedHubs.push(hub);
     }
+
+    // uncomment to see result logs:
+    /*
+    for (var i = 0; i < sortedHubs.length; i++) {
+        console.log(sortedHubs[i].name);
+        console.log(sortedHubs[i].distance);
+    }
+    */
+
     return sortedHubs
   }
+
 
   render () {
     return (
