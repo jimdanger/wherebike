@@ -1,23 +1,19 @@
 import React from 'react'
-import { ScrollView, Text, Image, View } from 'react-native'
+import { ScrollView, Text, Image, View, DeviceEventEmitter} from 'react-native'
 import DevscreensButton from '../../ignite/DevScreens/DevscreensButton.js'
 import FixtureAPI from '../../App/Services/FixtureApi'
-
-
 import { Images } from '../Themes'
-// import MapView from 'react-native-maps'
 import { WBMapView } from '../../App/WB/WBMapView'
-
-// For API
 import API from '../../App/Services/Api'
 import FJSON from 'format-json'
-
-// Styles
 import styles from './Styles/MainScreenStyles'
+import ReactNativeHeading from 'react-native-heading' // TODO: install on andoid, https://github.com/yonahforst/react-native-heading
+import Geolib from 'geolib' // docs: https://github.com/manuelbieh/geolib
 
 export default class MainScreen extends React.Component {
 
   api = {}
+
   // mapregion = region: { // SF
   //   latitude: 37.78825,
   //   longitude: -122.4324,
@@ -40,7 +36,9 @@ export default class MainScreen extends React.Component {
       userLong: null,
       geolocationError: null,
       shouldMapFollowUser : true,
-      isMapScrollEnabled : false // see commit message for more details.
+      isMapScrollEnabled : false, // see commit message for more details.
+      headingIsSupported: false,
+      compassHeading: '80 deg'
     }
 
     this.api = API.create()
@@ -48,12 +46,16 @@ export default class MainScreen extends React.Component {
 
   componentDidMount() {
       this.getHubs()
-      this.getUserPosition()
-      this.startWatchingUserPosition()
+      this.startGettingCompassHeading()
+  }
+
+  componentWillUnmount() {
+  	ReactNativeHeading.stop();
+  	DeviceEventEmitter.removeAllListeners('headingUpdated');
   }
 
   getHubs() {
-    // this.callGetHubs()
+    // this.callGetHubs() // TODO: DO NOT DELETE THIS LINE. this is the real api call.
     this.getMockHubs()
   }
 
@@ -75,35 +77,25 @@ export default class MainScreen extends React.Component {
           hubs: response.data,
           displaytext : response.data[0].address
       }, ()=> {
-        console.log(this.state.hubs[0].address)
+        this.startWatchingUserPosition()
+
       })
     } else {
       // TODO: do something about the error.
     }
   }
 
-  getUserPosition() {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        this.updateRegion(position.coords);
-        this.setState({
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-          error: null,
-        });
-
-      },
-      (error) => this.setState({ error: error.message }),
-      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
-    );
-  }
 
   startWatchingUserPosition() {
     navigator.geolocation.watchPosition((position) => {
       console.log(position.coords)
       this.updateRegion(position.coords);
+
+      console.log(this.sortHubsByDistanceFromUser(this.state.hubs, position));
+
    });
   }
+
 
   updateRegion = (coords) => {
     if (this.state.shouldMapFollowUser){
@@ -114,6 +106,7 @@ export default class MainScreen extends React.Component {
             latitudeDelta: 0.0122,
             longitudeDelta: 0.0011,
         },
+
       });
     }
   }
@@ -125,6 +118,43 @@ export default class MainScreen extends React.Component {
     });
   }
 
+  startGettingCompassHeading = () => {
+    ReactNativeHeading.start(1)
+    .then(didStart => {
+      this.setState({
+        headingIsSupported: didStart,
+      })
+    })
+
+    DeviceEventEmitter.addListener('headingUpdated', data => {
+      console.log('New heading is:', data.heading);
+
+      this.setState({
+        compassHeading: data.heading + ' deg',
+      })
+    });
+  }
+
+  // TODO: write a test for this function.
+  sortHubsByDistanceFromUser = (hubs, userPosition) => {
+
+    // create array of object that 'geolib.orderByDistance' expects:
+    var spots = []
+    for (var i = 0; i < hubs.length; i++) {
+      spots.push({latitude: hubs[i].middle_point.coordinates[1], longitude: hubs[i].middle_point.coordinates[0]} );
+    }
+
+    // Returns a sorted array [{latitude: x, longitude: y, distance: z, key: property}]
+    let orderedHubKeys = geolib.orderByDistance(userPosition.coords, spots);
+
+    // use the new sorted array and its key property to sort actual hubs.
+    var sortedHubs = []
+    for (var i = 0; i < orderedHubKeys.length; i++) {
+        sortedHubs.push(hubs[orderedHubKeys[i].key]);
+    }
+    return sortedHubs
+  }
+
   render () {
     return (
 
@@ -132,7 +162,9 @@ export default class MainScreen extends React.Component {
         <View style={styles.container}>
 
           <View style={styles.centered}>
+              <View style={{transform:[{rotate: this.state.compassHeading}]}}>
             <Image source={Images.launch} style={styles.logo} />
+            </View>
           </View>
 
           <View style={styles.section} >

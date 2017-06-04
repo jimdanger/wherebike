@@ -36,6 +36,7 @@
     "react-native-config": "^0.2.1",
     "react-native-device-info": "0.10.2",
     "react-native-drawer": "^2.3.0",
+    "react-native-heading": "^1.1.1",
     "react-native-i18n": "1.0.0",
     "react-native-maps": "^0.15.2",
     "react-native-vector-icons": "4.1.1",
