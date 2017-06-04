@@ -7,7 +7,7 @@ import { WBMapView } from '../../App/WB/WBMapView'
 import API from '../../App/Services/Api'
 import FJSON from 'format-json'
 import styles from './Styles/MainScreenStyles'
-import ReactNativeHeading from 'react-native-heading' // TODO: install on andoid, https://github.com/yonahforst/react-native-heading
+import ReactNativeHeading from 'react-native-heading' // TODO: follow installation for Android, https://github.com/yonahforst/react-native-heading
 import Geolib from 'geolib' // docs: https://github.com/manuelbieh/geolib
 
 export default class MainScreen extends React.Component {
@@ -18,7 +18,10 @@ export default class MainScreen extends React.Component {
     super(props)
     this.state = {
       hubs: [],
-      displaytext: 'sometext',
+      bikeHubName: 'bikeHubName',
+      distance: 'distance',
+      availableBikes: 'availableBikes',
+      freeRacks: 'freeRacks',
       wbMapRegion: { // Atlanta
           latitude: 33.7627864,
           longitude: -84.3829767,
@@ -29,7 +32,7 @@ export default class MainScreen extends React.Component {
       userLong: null,
       geolocationError: null,
       shouldMapFollowUser : true,
-      isMapScrollEnabled : false, // see commit message for more details.
+      isMapScrollEnabled : false, // see commit message for details on why this is needed.
       headingIsSupported: false,
       compassHeading: '80 deg'
     }
@@ -68,7 +71,6 @@ export default class MainScreen extends React.Component {
 
       this.setState({
           hubs: response.data,
-          displaytext : response.data[0].address
       }, ()=> {
         this.startWatchingUserPosition()
 
@@ -82,11 +84,21 @@ export default class MainScreen extends React.Component {
     navigator.geolocation.watchPosition((position) => {
       console.log(position.coords);
       this.updateRegion(position.coords);
-      this.sortHubsByDistanceFromUser(this.state.hubs, position);
+      let sortedHubs = this.sortHubsByDistanceFromUser(this.state.hubs, position);
+      this.updateDisplayToPointToClosestHub(sortedHubs);
 
    });
   }
 
+  updateDisplayToPointToClosestHub= (sortedHubs) => {
+    this.setState({
+      bikeHubName: sortedHubs[0].name,
+      distance: sortedHubs[0].distance,
+      availableBikes: sortedHubs[0].available_bikes,
+      freeRacks: sortedHubs[0].free_racks,
+    });
+
+  }
 
   updateRegion = (coords) => {
     if (this.state.shouldMapFollowUser){
@@ -126,7 +138,6 @@ export default class MainScreen extends React.Component {
     });
   }
 
-
   sortHubsByDistanceFromUser = (hubs, userPosition) => { // TODO: write a test for this function.
 
     // create array of object that 'geolib.orderByDistance' expects:
@@ -145,15 +156,6 @@ export default class MainScreen extends React.Component {
         hub.distance = orderedHubKeys[i].distance
         sortedHubs.push(hub);
     }
-
-    // uncomment to see result logs:
-    /*
-    for (var i = 0; i < sortedHubs.length; i++) {
-        console.log(sortedHubs[i].name);
-        console.log(sortedHubs[i].distance);
-    }
-    */
-
     return sortedHubs
   }
 
@@ -173,7 +175,16 @@ export default class MainScreen extends React.Component {
           <View style={styles.section} >
 
             <Text style={styles.sectionText}>
-              {this.state.displaytext}
+              {this.state.bikeHubName}
+            </Text>
+            <Text style={styles.sectionText}>
+              {this.state.distance + "m"}
+            </Text>
+            <Text style={styles.sectionText}>
+              {'Available bikes: ' + this.state.availableBikes}
+            </Text>
+            <Text style={styles.sectionText}>
+              {'Free racks: ' + this.state.freeRacks}
             </Text>
 
           </View>
