@@ -36,7 +36,7 @@ export class WBMapView extends Component {
           this.props.onPanDragCallback();
         }}
       >
-        
+
         {this.props.hubs.map(hub => (
           <MapView.Marker
             key={hub.name} // to silence warning. "Warning: Each child in an array or iterator shoul dhave unique 'key' prop."

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, Text, Image, View, DeviceEventEmitter} from 'react-native'
+import { ScrollView, Text, Image, View, DeviceEventEmitter, Animated} from 'react-native'
 import DevscreensButton from '../../ignite/DevScreens/DevscreensButton.js'
 import FixtureAPI from '../../App/Services/FixtureApi'
 import { Images } from '../Themes'
@@ -34,11 +34,12 @@ export default class MainScreen extends React.Component {
       shouldMapFollowUser : true,
       isMapScrollEnabled : false, // see commit message for details on why this is needed.
       headingIsSupported: false,
-      arrowRotationDegrees: '0 deg',
-      compassHeading: 0,
-      rhumbLineBearing: 0
+      arrowRotationDegrees: '0 deg'
+
     }
     this.api = API.create()
+    this.compassHeading = 0;
+    this.rhumbLineBearing = 0;
   }
 
   componentDidMount() {
@@ -68,13 +69,11 @@ export default class MainScreen extends React.Component {
 
   processGetHubsAPIResult = (response) => {
     if (response.ok) {
-      console.log(FJSON.plain(response.data))
 
       this.setState({
           hubs: response.data,
       }, ()=> {
         this.startWatchingUserPosition()
-
       })
     } else {
       // TODO: do something about the error.
@@ -83,7 +82,6 @@ export default class MainScreen extends React.Component {
 
   startWatchingUserPosition() {
     navigator.geolocation.watchPosition((position) => {
-      console.log(position.coords);
       this.updateRegion(position.coords);
       let sortedHubs = this.sortHubsByDistanceFromUser(this.state.hubs, position);
       let chosenHub = 0 // in the future, user will be able to select more than just the closest one.
@@ -93,31 +91,26 @@ export default class MainScreen extends React.Component {
 
   updateDisplayToChosenHub = (position, sortedHubs, index) => {
 
-    let rhumbLineBearing = geolib.getRhumbLineBearing(
+    this.rhumbLineBearing = geolib.getRhumbLineBearing(
       position.coords,
       {latitude: sortedHubs[index].middle_point.coordinates[1],
         longitude: sortedHubs[index].middle_point.coordinates[0]}
     );
+    this.setArrow()
 
     this.setState({
       bikeHubName: sortedHubs[index].name,
       distance: sortedHubs[index].distance,
       availableBikes: sortedHubs[index].available_bikes,
       freeRacks: sortedHubs[index].free_racks,
-      rhumbLineBearing: rhumbLineBearing,
-    }, ()=> {
-      this.setArrow()
     });
   }
 
   setArrow = () => {
-    console.log('setArrow called');
-
-    let degrees = this.state.rhumbLineBearing - this.state.compassHeading
+    let degrees = this.rhumbLineBearing - this.compassHeading
     this.setState({
       arrowRotationDegrees: degrees + ' deg'
     });
-
   }
 
   updateRegion = (coords) => {
@@ -149,15 +142,10 @@ export default class MainScreen extends React.Component {
     })
 
     DeviceEventEmitter.addListener('headingUpdated', data => {
-      this.setState({
-        compassHeading: data.heading,
-      }, ()=> {
-        this.setArrow()
-      })
+      this.compassHeading = data.heading;
+      this.setArrow();
     });
   }
-
-
 
   sortHubsByDistanceFromUser = (hubs, userPosition) => { // TODO: write a test for this function.
 
@@ -187,9 +175,11 @@ export default class MainScreen extends React.Component {
         <View style={styles.container}>
 
           <View style={styles.centered}>
-              <View style={{transform:[{rotate: this.state.arrowRotationDegrees}]}}>
-            <Image source={Images.arrow} style={styles.logo} />
-            </View>
+
+              <View
+                style={{transform:[{rotate: this.state.arrowRotationDegrees}]}}>
+                <Image source={Images.arrow} style={styles.logo}/>
+              </View>
           </View>
 
           <View style={styles.section} >
