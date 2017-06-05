@@ -108,6 +108,7 @@ export default class MainScreen extends React.Component {
 
   setArrow = () => {
     let degrees = this.rhumbLineBearing - this.compassHeading
+    console.log(degrees);
     this.setState({
       arrowRotationDegrees: degrees + ' deg'
     });
@@ -175,9 +176,12 @@ export default class MainScreen extends React.Component {
         <View style={styles.container}>
 
           <View style={styles.centered}>
-
               <View
-                style={{transform:[{rotate: this.state.arrowRotationDegrees}]}}>
+                style={{transform:[{rotate: this.state.arrowRotationDegrees}]}}
+                shouldRasterizeIOS={true}
+                renderToHardwareTextureAndroid={true}
+                >
+
                 <Image source={Images.arrow} style={styles.logo}/>
               </View>
           </View>
@@ -188,7 +192,7 @@ export default class MainScreen extends React.Component {
               {this.state.bikeHubName}
             </Text>
 
-            {/*
+
             <Text style={styles.sectionText}>
               {this.state.distance + "m"}
             </Text>
@@ -198,7 +202,7 @@ export default class MainScreen extends React.Component {
             <Text style={styles.sectionText}>
               {'Free racks: ' + this.state.freeRacks}
             </Text>
-             */}
+
 
           </View>
 
