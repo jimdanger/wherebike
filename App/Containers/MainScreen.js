@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, Text, Image, View, DeviceEventEmitter, Animated} from 'react-native'
+import { ScrollView, Text, Image, View, DeviceEventEmitter, Animated, Alert} from 'react-native'
 import DevscreensButton from '../../ignite/DevScreens/DevscreensButton.js'
 import FixtureAPI from '../../App/Services/FixtureApi'
 import { Images } from '../Themes'
@@ -7,7 +7,7 @@ import { WBMapView } from '../../App/WB/WBMapView'
 import API from '../../App/Services/Api'
 import FJSON from 'format-json'
 import styles from './Styles/MainScreenStyles'
-import ReactNativeHeading from 'react-native-heading' // TODO: follow installation for Android, https://github.com/yonahforst/react-native-heading
+import ReactNativeHeading from 'react-native-heading' // docs: https://github.com/yonahforst/react-native-heading
 import Geolib from 'geolib' // docs: https://github.com/manuelbieh/geolib
 
 export default class MainScreen extends React.Component {
@@ -69,7 +69,6 @@ export default class MainScreen extends React.Component {
 
   processGetHubsAPIResult = (response) => {
     if (response.ok) {
-
       this.setState({
           hubs: response.data,
       }, ()=> {
@@ -81,14 +80,39 @@ export default class MainScreen extends React.Component {
   }
 
   startWatchingUserPosition() {
-    navigator.geolocation.watchPosition((position) => {
-      this.updateRegion(position.coords);
-      let sortedHubs = this.sortHubsByDistanceFromUser(this.state.hubs, position);
-      let chosenHub = 0 // in the future, user will be able to select more than just the closest one.
-      this.updateDisplayToChosenHub(position, sortedHubs, chosenHub);
-   });
+    navigator.geolocation.watchPosition(
+      (position) => {
+        this.updateRegion(position.coords);
+        let sortedHubs = this.sortHubsByDistanceFromUser(this.state.hubs, position);
+        let chosenHub = 0 // in the future, user will be able to select more than just the closest one.
+        this.updateDisplayToChosenHub(position, sortedHubs, chosenHub);
+      },(error) => {
+        console.log("ERROR in geolocation.watchPosition : " + error.message)
+        if (error.code == 1) {
+            this.showAlert(
+              'Error',
+              'Please turn on location services and restart this app.', //
+              [{text: 'OK', onPress: this.okayPressed()},
+              ]
+            );
+        }
+      }
+    );
   }
 
+  okayPressed() {
+    console.log('OK Pressed');
+    // TODO: make better UX, wait until user position is available and take action.
+  }
+
+  showAlert(title, message, buttons) {
+    Alert.alert(
+      title,
+      message,
+      buttons,
+      { cancelable: false }
+    )
+  }
   updateDisplayToChosenHub = (position, sortedHubs, index) => {
 
     this.rhumbLineBearing = geolib.getRhumbLineBearing(
@@ -97,7 +121,6 @@ export default class MainScreen extends React.Component {
         longitude: sortedHubs[index].middle_point.coordinates[0]}
     );
     this.setArrow()
-
     this.setState({
       bikeHubName: sortedHubs[index].name,
       distance: sortedHubs[index].distance,
@@ -108,7 +131,7 @@ export default class MainScreen extends React.Component {
 
   setArrow = () => {
     let degrees = this.rhumbLineBearing - this.compassHeading
-    console.log(degrees);
+    // console.log(degrees);
     this.setState({
       arrowRotationDegrees: degrees + ' deg'
     });
@@ -143,7 +166,11 @@ export default class MainScreen extends React.Component {
     })
 
     DeviceEventEmitter.addListener('headingUpdated', data => {
-      this.compassHeading = data.heading;
+      var heading = data.heading; // iOS returns heading here
+      if (heading == undefined) {
+          heading = data; // Android returns heading here
+      }
+      this.compassHeading = heading;
       this.setArrow();
     });
   }
@@ -181,7 +208,6 @@ export default class MainScreen extends React.Component {
                 shouldRasterizeIOS={true}
                 renderToHardwareTextureAndroid={true}
                 >
-
                 <Image source={Images.arrow} style={styles.logo}/>
               </View>
           </View>
