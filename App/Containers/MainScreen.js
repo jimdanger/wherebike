@@ -219,7 +219,7 @@ export default class MainScreen extends React.Component {
             </Text>
 
 
-            <Text style={styles.sectionText}>
+            {/* <Text style={styles.sectionText}>
               {this.state.distance + "m"}
             </Text>
             <Text style={styles.sectionText}>
@@ -227,7 +227,7 @@ export default class MainScreen extends React.Component {
             </Text>
             <Text style={styles.sectionText}>
               {'Free racks: ' + this.state.freeRacks}
-            </Text>
+            </Text> */}
 
 
           </View>
