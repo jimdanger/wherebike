@@ -1,5 +1,6 @@
 import React from 'react'
-import { ScrollView, Text, Image, View, DeviceEventEmitter, Animated, Alert} from 'react-native'
+import { ScrollView, Text, Image, View, DeviceEventEmitter,
+  Animated, Alert, PanResponder, Dimensions} from 'react-native'
 import DevscreensButton from '../../ignite/DevScreens/DevscreensButton.js'
 import FixtureAPI from '../../App/Services/FixtureApi'
 import { Images } from '../Themes'
@@ -9,6 +10,8 @@ import FJSON from 'format-json'
 import styles from './Styles/MainScreenStyles'
 import ReactNativeHeading from 'react-native-heading' // docs: https://github.com/yonahforst/react-native-heading
 import Geolib from 'geolib' // docs: https://github.com/manuelbieh/geolib
+
+const Window = Dimensions.get('window');
 
 export default class MainScreen extends React.Component {
 
@@ -34,13 +37,39 @@ export default class MainScreen extends React.Component {
       shouldMapFollowUser : true,
       isMapScrollEnabled : false, // see commit message for details on why this is needed.
       headingIsSupported: false,
-      arrowRotationDegrees: '0 deg'
-
+      arrowRotationDegrees: '0 deg',
+      pan: new Animated.ValueXY() //Step1
     }
     this.api = API.create()
     this.compassHeading = 0;
     this.rhumbLineBearing = 0;
+    this.setupDragableBar()
   }
+
+  setupDragableBar = () => {
+    this.panResponder = PanResponder.create({
+       onStartShouldSetPanResponder: () => true,
+      //  onPanResponderMove: Animated.event([null,{
+      //      dy : this.state.pan.y
+       //
+      //  }]),
+       onPanResponderGrant: (e, gestureState) => {
+
+       },
+      onPanResponderMove: (evt, gestureState) => {
+
+       console.log(gestureState.dy);
+
+       // adjust the view here.
+       // math??
+
+     },
+       onPanResponderRelease : (e, gesture) => {
+         // code to execute when the element is released
+       }
+   });
+  }
+
 
   componentDidMount() {
       this.getHubs()
@@ -134,6 +163,7 @@ export default class MainScreen extends React.Component {
     // console.log(degrees);
     this.setState({
       arrowRotationDegrees: degrees + ' deg'
+
     });
   }
 
@@ -199,52 +229,111 @@ export default class MainScreen extends React.Component {
   render () {
     return (
 
+
       <View style={styles.mainContainer}>
-        <View style={styles.container}>
+        {/* // COMPASS */}
+        <View style={{
+          flex: 1,
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'stretch',
+          backgroundColor: 'powderblue'
+        }}>
 
-          <View style={styles.centered}>
-              <View
-                style={{transform:[{rotate: this.state.arrowRotationDegrees}]}}
-                shouldRasterizeIOS={true}
-                renderToHardwareTextureAndroid={true}
-                >
-                <Image source={Images.arrow} style={styles.logo}/>
-              </View>
-          </View>
-
-          <View style={styles.section} >
-
-            <Text style={styles.sectionText}>
-              {this.state.bikeHubName}
-            </Text>
-
-
-            {/* <Text style={styles.sectionText}>
-              {this.state.distance + "m"}
-            </Text>
-            <Text style={styles.sectionText}>
-              {'Available bikes: ' + this.state.availableBikes}
-            </Text>
-            <Text style={styles.sectionText}>
-              {'Free racks: ' + this.state.freeRacks}
-            </Text> */}
-
-
-          </View>
-
-          <View style={styles.mapContainer} >
-            <WBMapView
-              hubs={this.state.hubs}
-              region={this.state.wbMapRegion}
-              onPanDragCallback={stopFollowingUser => {
-                this.stopFollowingUser()
-              }}
-              scrollEnabled= {this.state.isMapScrollEnabled}
-            />
+        <View style={styles.centered}>
+          <View
+            style={{transform:[{rotate: this.state.arrowRotationDegrees}]}}
+            shouldRasterizeIOS={true}
+            renderToHardwareTextureAndroid={true}
+            >
+              <Image source={Images.arrow} style={styles.logo}/>
+            </View>
           </View>
 
         </View>
+        {/* // COMPASS END */}
+
+        {/* // GRAB BAR */}
+        <View>
+          <Animated.View
+            {...this.panResponder.panHandlers}
+            // style={[this.state.pan.getLayout()]}
+            >
+            <View style={{height: 75, backgroundColor: 'steelblue'}}/>
+          </Animated.View>
+
+        </View>
+        {/* // END GRAB BAR */}
+
+        {/* // MAP */}
+        <View style={{
+          flex: 1,
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'stretch'
+
+        }}>
+
+        <WBMapView
+          hubs={this.state.hubs}
+          region={this.state.wbMapRegion}
+          onPanDragCallback={stopFollowingUser => {
+            this.stopFollowingUser()
+          }}
+          scrollEnabled= {this.state.isMapScrollEnabled}
+        />
+
       </View>
+     {/* // END MAP */}
+   </View>
+   // *********
+
+      // <View style={styles.mainContainer}>
+      //   <View style={styles.container}>
+      //
+          // <View style={styles.centered}>
+          //     <View
+          //       style={{transform:[{rotate: this.state.arrowRotationDegrees}]}}
+          //       shouldRasterizeIOS={true}
+          //       renderToHardwareTextureAndroid={true}
+          //       >
+          //       <Image source={Images.arrow} style={styles.logo}/>
+          //     </View>
+          // </View>
+      //
+      //     <View style={styles.section} >
+      //
+      //       <Text style={styles.sectionText}>
+      //         {this.state.bikeHubName}
+      //       </Text>
+      //
+      //
+      //       {/* <Text style={styles.sectionText}>
+      //         {this.state.distance + "m"}
+      //       </Text>
+      //       <Text style={styles.sectionText}>
+      //         {'Available bikes: ' + this.state.availableBikes}
+      //       </Text>
+      //       <Text style={styles.sectionText}>
+      //         {'Free racks: ' + this.state.freeRacks}
+      //       </Text> */}
+      //
+      //
+      //     </View>
+      //
+      //     <View style={styles.mapContainer} >
+      //       <WBMapView
+      //         hubs={this.state.hubs}
+      //         region={this.state.wbMapRegion}
+      //         onPanDragCallback={stopFollowingUser => {
+      //           this.stopFollowingUser()
+      //         }}
+      //         scrollEnabled= {this.state.isMapScrollEnabled}
+      //       />
+      //     </View>
+      //
+      //   </View>
+      // </View>
     )
   }
 }
