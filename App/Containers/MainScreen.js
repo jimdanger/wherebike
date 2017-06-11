@@ -63,12 +63,13 @@ export default class MainScreen extends React.Component {
       // this.compassSectionHeight += gestureState.dy
       this.setState({
          compassSectionHeight: this.originalCompassSectionHeight + gestureState.dy
+
        });
      },
        onPanResponderRelease : (e, gesture) => {
          // code to execute when the element is released
           this.originalCompassSectionHeight = this.state.compassSectionHeight
-          //  this.state.pan.flattenOffset();
+          //  this.state.pan.flattenOffset(); // is this needed? does not appear so
        }
    });
   }
@@ -247,7 +248,7 @@ export default class MainScreen extends React.Component {
             shouldRasterizeIOS={true}
             renderToHardwareTextureAndroid={true}
             >
-              <Image source={Images.arrow} style={styles.logo}/>
+              <Image source={Images.arrow} style={styles.arrow}/>
             </View>
           </View>
 
