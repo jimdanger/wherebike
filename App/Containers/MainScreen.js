@@ -42,8 +42,7 @@ export default class MainScreen extends React.Component {
       headingIsSupported: false,
       arrowRotationDegrees: '0 deg',
       pan: new Animated.ValueXY(),
-      compassSectionHeight: this.originalCompassSectionHeight,
-
+      compassSectionHeight: this.originalCompassSectionHeight
 
     }
     this.api = API.create()
@@ -51,6 +50,8 @@ export default class MainScreen extends React.Component {
     this.rhumbLineBearing = 0;
     this.setupDragableBar();
     this.dragBarMidPosition = null;
+    this.minCompassSectionHeight = Window.height/8;
+    this.maxCompassSectionHeight = this.originalCompassSectionHeight;
   }
 
   setupDragableBar = () => {
@@ -62,11 +63,14 @@ export default class MainScreen extends React.Component {
        },
       onPanResponderMove: (evt, gestureState) => {
 
-      // this.compassSectionHeight += gestureState.dy
-      this.setState({
-         compassSectionHeight: this.originalCompassSectionHeight + gestureState.dy
-
-       });
+      var noLimitCompassSectionHeight = this.originalCompassSectionHeight + gestureState.dy;
+      if (this.isWithinLimits(noLimitCompassSectionHeight,
+        this.minCompassSectionHeight,
+        this.maxCompassSectionHeight )) {
+          this.setState({
+            compassSectionHeight: noLimitCompassSectionHeight
+          });
+        }
      },
        onPanResponderRelease : (e, gesture) => {
          // code to execute when the element is released
@@ -75,7 +79,9 @@ export default class MainScreen extends React.Component {
        }
    });
   }
-
+  isWithinLimits = (x, min, max, ) => {
+    return (x <= max && x >= min) ? true : false
+  }
 
   componentDidMount() {
       this.getHubs()
