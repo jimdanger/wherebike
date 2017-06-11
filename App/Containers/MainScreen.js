@@ -3,7 +3,7 @@ import { ScrollView, Text, Image, View, DeviceEventEmitter,
   Animated, Alert, PanResponder, Dimensions} from 'react-native'
 import FixtureAPI from '../../App/Services/FixtureApi'
 import { Images } from '../Themes'
-import { WBMapView } from '../../App/WB/WBMapView'
+import { WBMapView } from '../../App/Components/WBMapView'
 import API from '../../App/Services/Api'
 import FJSON from 'format-json'
 import styles from './Styles/MainScreenStyles'
