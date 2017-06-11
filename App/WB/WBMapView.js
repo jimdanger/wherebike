@@ -19,7 +19,13 @@ export class WBMapView extends Component {
 
   onRegionChange(region) {
     // do something maybe?
+    // debugger;
+    console.log("WB onRegionChange " + region );
+    // this.props.onRegionChangeCallbackname;
+    this.props.onRegionChangeCallback(region);
   }
+
+
 
   render () {
 
@@ -27,7 +33,11 @@ export class WBMapView extends Component {
       <MapView.Animated
         style={styles.map}
         region={this.props.region}
-        onRegionChange={this.onRegionChange}
+        onRegionChange={(region) => {
+          this.onRegionChange(region);
+          // this.props.onRegionChangeCallback();
+        }}
+
         showsUserLocation
         // provider ={'google'} // TODO: uncomment and fix error - import google maps to ios
         scrollEnabled={this.props.scrollEnabled}

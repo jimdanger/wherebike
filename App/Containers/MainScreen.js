@@ -42,7 +42,9 @@ export default class MainScreen extends React.Component {
       headingIsSupported: false,
       arrowRotationDegrees: '0 deg',
       pan: new Animated.ValueXY(),
-      compassSectionHeight: this.originalCompassSectionHeight
+      compassSectionHeight: this.originalCompassSectionHeight,
+
+
     }
     this.api = API.create()
     this.compassHeading = 0;
@@ -164,15 +166,24 @@ export default class MainScreen extends React.Component {
 
   setArrow = () => {
     let degrees = this.rhumbLineBearing - this.compassHeading
-    // console.log(degrees);
+
+    console.log("setArrow");
     this.setState({
       arrowRotationDegrees: degrees + ' deg'
 
     });
   }
+  onRegionChange = (region) => {
+
+    console.log("onRegionChange called "+ region);
+    this.state.wbMapRegion = region 
+
+
+  }
 
   updateRegion = (coords) => {
     if (this.state.shouldMapFollowUser){
+      console.log("updateRegion");
       this.setState({
         wbMapRegion: {
             latitude: coords.latitude,
@@ -209,7 +220,7 @@ export default class MainScreen extends React.Component {
     });
   }
 
-  sortHubsByDistanceFromUser = (hubs, userPosition) => { // TODO: write a test for this function.
+  sortHubsByDistanceFromUser = (hubs, userPosition) => {
 
     // create array of object that 'geolib.orderByDistance' expects:
     var spots = []
@@ -307,13 +318,16 @@ export default class MainScreen extends React.Component {
           onPanDragCallback={stopFollowingUser => {
             this.stopFollowingUser()
           }}
+          onRegionChangeCallback={(region) =>  {
+            this.onRegionChange(region)
+          }}
           scrollEnabled= {this.state.isMapScrollEnabled}
         />
 
       </View>
      {/* // END MAP */}
    </View>
-   
+
     )
   }
 }
