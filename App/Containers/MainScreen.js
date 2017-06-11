@@ -59,7 +59,7 @@ export default class MainScreen extends React.Component {
          this.state.pan.setValue({x: 0, y: 0});
        },
       onPanResponderMove: (evt, gestureState) => {
-        console.log(gestureState.dy);
+
       // this.compassSectionHeight += gestureState.dy
       this.setState({
          compassSectionHeight: this.originalCompassSectionHeight + gestureState.dy
@@ -261,7 +261,32 @@ export default class MainScreen extends React.Component {
             {...this.panResponder.panHandlers}
             // style={[this.state.pan.getLayout()]}
             >
-            <View style={{height: kGrabBarHeight, backgroundColor: 'steelblue'}}/>
+              <View style={{height: kGrabBarHeight, backgroundColor: 'steelblue'}}>
+
+                 <View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-around'}}>
+
+                   <Text>
+                   {this.state.bikeHubName}
+                  </Text>
+                  <Text>
+                  {this.state.distance + "m"}
+                 </Text>
+                 </View>
+                 <View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-around'}}>
+
+                 <Text>
+                 {'Available bikes: ' + this.state.availableBikes}
+                </Text>
+                <Text >
+                  {'Free racks: ' + this.state.freeRacks}
+                </Text>
+
+                 </View>
+
+
+              </View>
+
+
           </Animated.View>
 
         </View>
@@ -288,54 +313,7 @@ export default class MainScreen extends React.Component {
       </View>
      {/* // END MAP */}
    </View>
-   // *********
-
-      // <View style={styles.mainContainer}>
-      //   <View style={styles.container}>
-      //
-          // <View style={styles.centered}>
-          //     <View
-          //       style={{transform:[{rotate: this.state.arrowRotationDegrees}]}}
-          //       shouldRasterizeIOS={true}
-          //       renderToHardwareTextureAndroid={true}
-          //       >
-          //       <Image source={Images.arrow} style={styles.logo}/>
-          //     </View>
-          // </View>
-      //
-      //     <View style={styles.section} >
-      //
-      //       <Text style={styles.sectionText}>
-      //         {this.state.bikeHubName}
-      //       </Text>
-      //
-      //
-      //       {/* <Text style={styles.sectionText}>
-      //         {this.state.distance + "m"}
-      //       </Text>
-      //       <Text style={styles.sectionText}>
-      //         {'Available bikes: ' + this.state.availableBikes}
-      //       </Text>
-      //       <Text style={styles.sectionText}>
-      //         {'Free racks: ' + this.state.freeRacks}
-      //       </Text> */}
-      //
-      //
-      //     </View>
-      //
-      //     <View style={styles.mapContainer} >
-      //       <WBMapView
-      //         hubs={this.state.hubs}
-      //         region={this.state.wbMapRegion}
-      //         onPanDragCallback={stopFollowingUser => {
-      //           this.stopFollowingUser()
-      //         }}
-      //         scrollEnabled= {this.state.isMapScrollEnabled}
-      //       />
-      //     </View>
-      //
-      //   </View>
-      // </View>
+   
     )
   }
 }

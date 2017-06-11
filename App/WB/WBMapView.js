@@ -31,6 +31,7 @@ export class WBMapView extends Component {
         showsUserLocation
         // provider ={'google'} // TODO: uncomment and fix error - import google maps to ios
         scrollEnabled={this.props.scrollEnabled}
+        showsCompass={true}
         onPress={() => {console.log('triggering onPress')}}
         onPanDrag={() => {
           this.props.onPanDragCallback();
