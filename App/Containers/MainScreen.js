@@ -1,7 +1,6 @@
 import React from 'react'
 import { ScrollView, Text, Image, View, DeviceEventEmitter,
   Animated, Alert, PanResponder, Dimensions} from 'react-native'
-import DevscreensButton from '../../ignite/DevScreens/DevscreensButton.js'
 import FixtureAPI from '../../App/Services/FixtureApi'
 import { Images } from '../Themes'
 import { WBMapView } from '../../App/WB/WBMapView'
@@ -94,7 +93,7 @@ export default class MainScreen extends React.Component {
   }
 
   getHubs() {
-    // this.callGetHubs() // TODO: DO NOT DELETE THIS LINE. this is the real api call.
+    this.callGetHubs() // TODO: DO NOT DELETE THIS LINE. this is the real api call.
     this.getMockHubs()
   }
 
