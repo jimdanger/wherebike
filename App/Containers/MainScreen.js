@@ -12,6 +12,7 @@ import ReactNativeHeading from 'react-native-heading' // docs: https://github.co
 import Geolib from 'geolib' // docs: https://github.com/manuelbieh/geolib
 
 const Window = Dimensions.get('window');
+const kGrabBarHeight = 75;
 
 export default class MainScreen extends React.Component {
 
@@ -19,6 +20,8 @@ export default class MainScreen extends React.Component {
 
   constructor (props) {
     super(props)
+    this.originalCompassSectionHeight = Window.height/2 - kGrabBarHeight/2;
+
     this.state = {
       hubs: [],
       bikeHubName: 'bikeHubName',
@@ -38,34 +41,34 @@ export default class MainScreen extends React.Component {
       isMapScrollEnabled : false, // see commit message for details on why this is needed.
       headingIsSupported: false,
       arrowRotationDegrees: '0 deg',
-      pan: new Animated.ValueXY() //Step1
+      pan: new Animated.ValueXY(),
+      compassSectionHeight: this.originalCompassSectionHeight
     }
     this.api = API.create()
     this.compassHeading = 0;
     this.rhumbLineBearing = 0;
-    this.setupDragableBar()
+    this.setupDragableBar();
+    this.dragBarMidPosition = null;
   }
 
   setupDragableBar = () => {
     this.panResponder = PanResponder.create({
        onStartShouldSetPanResponder: () => true,
-      //  onPanResponderMove: Animated.event([null,{
-      //      dy : this.state.pan.y
-       //
-      //  }]),
        onPanResponderGrant: (e, gestureState) => {
-
+         this.state.pan.setOffset({x: this.state.pan.x._value, y: this.state.pan.y._value});
+         this.state.pan.setValue({x: 0, y: 0});
        },
       onPanResponderMove: (evt, gestureState) => {
-
-       console.log(gestureState.dy);
-
-       // adjust the view here.
-       // math??
-
+        console.log(gestureState.dy);
+      // this.compassSectionHeight += gestureState.dy
+      this.setState({
+         compassSectionHeight: this.originalCompassSectionHeight + gestureState.dy
+       });
      },
        onPanResponderRelease : (e, gesture) => {
          // code to execute when the element is released
+          this.originalCompassSectionHeight = this.state.compassSectionHeight
+          //  this.state.pan.flattenOffset();
        }
    });
   }
@@ -229,12 +232,10 @@ export default class MainScreen extends React.Component {
   render () {
     return (
 
-
       <View style={styles.mainContainer}>
         {/* // COMPASS */}
         <View style={{
-          flex: 1,
-          flexDirection: 'column',
+          height: this.state.compassSectionHeight,
           justifyContent: 'center',
           alignItems: 'stretch',
           backgroundColor: 'powderblue'
@@ -259,7 +260,7 @@ export default class MainScreen extends React.Component {
             {...this.panResponder.panHandlers}
             // style={[this.state.pan.getLayout()]}
             >
-            <View style={{height: 75, backgroundColor: 'steelblue'}}/>
+            <View style={{height: kGrabBarHeight, backgroundColor: 'steelblue'}}/>
           </Animated.View>
 
         </View>
@@ -267,8 +268,8 @@ export default class MainScreen extends React.Component {
 
         {/* // MAP */}
         <View style={{
+          // height: Window.height/2 - kGrabBarHeight/2,
           flex: 1,
-          flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'stretch'
 
