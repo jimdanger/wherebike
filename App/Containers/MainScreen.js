@@ -176,7 +176,7 @@ export default class MainScreen extends React.Component {
   onRegionChange = (region) => {
 
     console.log("onRegionChange called "+ region);
-    this.state.wbMapRegion = region 
+    this.state.wbMapRegion = region
 
 
   }
