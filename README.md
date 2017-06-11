@@ -1,7 +1,21 @@
-#  WhereBike
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
+#  Where Bike
 
-* Standard compliant React Native App Utilizing [Ignite](https://github.com/infinitered/ignite)
+
+## :bike: :bike: Description
+
+* A React-Native project which runs on iOS and Android.
+* Easily locate the closest Atlanta bike-share hub.
+* See map with all hubs, and arrow pointing to closest hub. All by merely launching the app.
+* Displays real-time data about available bikes and free racks.
+* Gesture recognizers allow users to pull for larger map view.
+
+<p align="center">
+  <a>
+    <img src="wherebike.gif" title="MVP demo" alt="vimrcBuilder Demo" border="10"/>
+  </a>
+</p>
+
+UI still needs polish and TLC. This gif demonstrates the functionality.
 
 ## :arrow_up: How to Setup
 
@@ -14,32 +28,44 @@
 
 ## :arrow_forward: How to Run App
 
-1. cd to the repo
+1. `cd` to the repo
 2. Run Build for either OS
   * for iOS
     * run `react-native run-ios`
   * for Android
-    * Run Genymotion
+    * connect exactly one physical Android device to your computer via USB.
+    * ensure connectivity by running `$ adb devices`
     * run `react-native run-android`
 
-## :no_entry_sign: Standard Compliant
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-This project adheres to Standard.  Our CI enforces this, so we suggest you enable linting to keep your project compliant during development.
+## :construction: Work in Progress
 
-**To Lint on Commit**
+* This project works and has basic functionality.  However, proceed with caution.
+* Main features left to add:
+  * UI polish 
+  * Integrate with other cities.
+  * Display public bike racks.
+    * Atlanta's bike-share program allows users to return bikes either at a bike-share hub, or by simply locking it to any public bike rack. (Small additional fee applies.)
+    * The ability to view hubs and public racks in the same UI would be a good value add.
+  * Allow user to swipe compass left/right to select next closest hubs.
 
-This is implemented using [ghooks](https://github.com/gtramontina/ghooks). There is no additional setup needed.
 
-**Bypass Lint**
 
-If you have to bypass lint for a special commit that you will come back and clean (pushing something to a branch etc.) then you can bypass git hooks with adding `--no-verify` to your commit command.
 
-**Understanding Linting Errors**
 
-The linting rules are from JS Standard and React-Standard.  [Regular JS errors can be found with descriptions here](http://eslint.org/docs/rules/), while [React errors and descriptions can be found here](https://github.com/yannickcr/eslint-plugin-react).
+## :thumbsup: Other notes
 
-## :closed_lock_with_key: Secrets
+* Compass will not work on the iOS emulator.
+* You will notice lag in developer mode. Use Xcode to build with a release scheme to avoid lag. See [these docs for more details](https://facebook.github.io/react-native/docs/running-on-device.html).  
+* I used [Ignite](https://infinite.red/ignite) to generate boilerplate code and get started quickly.
+* To explore, I recommend you start with App/Containers/MainScreen.js
+* This was my first react-native project. I welcome feedback, open an issue! :smiley:
+
+
+
+
+
+<!-- ## :closed_lock_with_key: Secrets
 
 This project uses [react-native-config](https://github.com/luggit/react-native-config) to expose config variables to your javascript code in React Native. You can store API keys
 and other sensitive information in a `.env` file:
@@ -58,5 +84,4 @@ Secrets.API_URL  // 'https://myapi.com'
 Secrets.GOOGLE_MAPS_API_KEY  // 'abcdefgh'
 ```
 
-The `.env` file is ignored by git keeping those secrets out of your repo.
-
+The `.env` file is ignored by git keeping those secrets out of your repo. -->
