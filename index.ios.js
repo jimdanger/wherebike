@@ -1,5 +1,10 @@
-import './App/Config/ReactotronConfig'
-import { AppRegistry } from 'react-native'
-import App from './App/Containers/App'
+import React, { Component } from 'react';
 
-AppRegistry.registerComponent('WhereBike', () => App)
+import WhereBike from './App/Containers/MainScreen';
+
+class MainScreen extends Component {
+   render() {
+     <MainScreen/>
+   }
+
+}

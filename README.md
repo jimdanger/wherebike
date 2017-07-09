@@ -37,12 +37,16 @@ UI still needs polish and TLC. This gif demonstrates the functionality.
     * ensure connectivity by running `$ adb devices`
     * run `react-native run-android`
 
+3. Troubleshooting:
+  * You may need to run `npm install geolib`
+  * You may need to run `npm start` to start the packager manually. Do this before running either `react-native run-ios` or `react-native run-android`. Keep the packager open while developing. 
+
 
 ## :construction: Work in Progress
 
 * This project works and has basic functionality.  However, proceed with caution.
 * Main features left to add:
-  * UI polish 
+  * UI polish
   * Integrate with other cities.
   * Display public bike racks.
     * Atlanta's bike-share program allows users to return bikes either at a bike-share hub, or by simply locking it to any public bike rack. (Small additional fee applies.)

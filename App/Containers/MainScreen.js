@@ -1,6 +1,6 @@
 import React from 'react'
 import { ScrollView, Text, Image, View, DeviceEventEmitter,
-  Animated, Alert, PanResponder, Dimensions} from 'react-native'
+  Animated, Alert, PanResponder, Dimensions, AppRegistry} from 'react-native'
 import FixtureAPI from '../../App/Services/FixtureApi'
 import { Images } from '../Themes'
 import { WBMapView } from '../../App/Components/WBMapView'
@@ -336,3 +336,6 @@ export default class MainScreen extends React.Component {
     )
   }
 }
+
+AppRegistry.registerComponent('WhereBike', () => MainScreen);
+

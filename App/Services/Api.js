@@ -34,9 +34,8 @@ const create = (baseURL = 'https://map.socialbicycles.com/') => {
   // Since we can't hide from that, we embrace it by getting out of the
   // way at this level.
   //
-  const getRoot = () => api.get('')
-  const getRate = () => api.get('rate_limit')
-  const getUser = (username) => api.get('search/users', {q: username})
+
+  const getSomeExample = () => api.get('some_example')
   const getHubs = (networkId) => api.get('hubs', {network_id: networkId})
 
   // ------
@@ -53,9 +52,7 @@ const create = (baseURL = 'https://map.socialbicycles.com/') => {
   //
   return {
     // a list of the API functions from step 2
-    getRoot,
-    getRate,
-    getUser,
+    getSomeExample,
     getHubs
   }
 }
