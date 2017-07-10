@@ -52,8 +52,8 @@ export class WBMapView extends Component {
           <MapView.Marker
             key={hub.name} // to silence warning. "Warning: Each child in an array or iterator shoul dhave unique 'key' prop."
             coordinate={{
-              longitude: hub.middle_point.coordinates[0],
-              latitude: hub.middle_point.coordinates[1]
+              longitude: hub.longitude,
+              latitude: hub.latitude
             }}
             title={hub.name}
             description={'Available bikes: ' + hub.available_bikes + '. Free racks: ' + hub.free_racks}

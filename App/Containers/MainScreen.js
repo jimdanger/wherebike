@@ -93,13 +93,14 @@ export default class MainScreen extends React.Component {
   }
 
   getHubs() {
-    this.callGetHubs() // TODO: DO NOT DELETE THIS LINE. this is the real api call.
+    // this.callGetHubs() // TODO: DO NOT DELETE THIS LINE. this is the real api call.
     this.getMockHubs()
   }
 
   callGetHubs = () => {
-    this.api['getHubs'].apply(this, ['31']).then((result) => {
+    this.api['getHubs'].apply(this, ['relay-atlanta']).then((result) => {
       this.processGetHubsAPIResult(result)
+      debugger;
     })
   }
 
@@ -108,14 +109,16 @@ export default class MainScreen extends React.Component {
   }
 
   processGetHubsAPIResult = (response) => {
+
     if (response.ok) {
       this.setState({
-          hubs: response.data,
+          hubs: response.data.network.stations,
       }, ()=> {
         this.startWatchingUserPosition()
       })
     } else {
-      // TODO: do something about the error.
+      // TODO: do something about the error. maybe call: this.getMockHubs() ?
+
     }
   }
 
@@ -157,8 +160,10 @@ export default class MainScreen extends React.Component {
 
     this.rhumbLineBearing = geolib.getRhumbLineBearing(
       position.coords,
-      {latitude: sortedHubs[index].middle_point.coordinates[1],
-        longitude: sortedHubs[index].middle_point.coordinates[0]}
+      {
+        latitude: sortedHubs[index].latitude,
+        longitude: sortedHubs[index].longitude
+      }
     );
     this.setArrow()
     this.setState({
@@ -230,7 +235,7 @@ export default class MainScreen extends React.Component {
     // create array of object that 'geolib.orderByDistance' expects:
     var spots = []
     for (var i = 0; i < hubs.length; i++) {
-      spots.push({latitude: hubs[i].middle_point.coordinates[1], longitude: hubs[i].middle_point.coordinates[0]} );
+      spots.push({latitude: hubs[i].latitude, longitude: hubs[i].longitude} );
     }
 
     // Returns a sorted array [{latitude: x, longitude: y, distance: z, key: property}]
@@ -338,4 +343,3 @@ export default class MainScreen extends React.Component {
 }
 
 AppRegistry.registerComponent('WhereBike', () => MainScreen);
-

@@ -1,0 +1,1076 @@
+{
+  "network": {
+    "company": [
+      "CycleHop, LLC",
+      "Social Bicycles Inc" 
+    ],
+    "gbfs_href": "https://relaybikeshare.socialbicycles.com/opendata/gbfs.json",
+    "href": "/v2/networks/relay-atlanta",
+    "id": "relay-atlanta",
+    "location": {
+      "city": "Atlanta, GA",
+      "country": "US",
+      "latitude": 33.7627941119619,
+      "longitude": -84.38727110624313
+    },
+    "name": "Relay Bike Share",
+    "stations": [
+      {
+        "empty_slots": 4,
+        "extra": {
+          "address": "78-122 Broad Street Southwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_1477"
+        },
+        "free_bikes": 3,
+        "id": "98e128eee23fff1b71a783cf9d6f94fc",
+        "latitude": 33.75160347465388,
+        "longitude": -84.39338453114033,
+        "name": "BROAD & MITCHELL",
+        "timestamp": "2017-07-09T17:20:04.360000Z"
+      },
+      {
+        "empty_slots": 5,
+        "extra": {
+          "address": "2-4 Ponce De Leon Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2118"
+        },
+        "free_bikes": 4,
+        "id": "6e7d4f909e75709f8190076c1928fa8f",
+        "latitude": 33.77233507697942,
+        "longitude": -84.38723489642143,
+        "name": "MARTA - NORTH AVE ",
+        "timestamp": "2017-07-09T17:20:04.261000Z"
+      },
+      {
+        "empty_slots": 8,
+        "extra": {
+          "address": "1043 Saint Charles Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2514"
+        },
+        "free_bikes": 2,
+        "id": "b91260cea17935b4e56e2f07177a7f17",
+        "latitude": 33.77543032492406,
+        "longitude": -84.35324996709824,
+        "name": "ATKINS PARK",
+        "timestamp": "2017-07-09T17:20:04.338000Z"
+      },
+      {
+        "empty_slots": 5,
+        "extra": {
+          "address": "768-798 Beckwith Street Southwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2462"
+        },
+        "free_bikes": 4,
+        "id": "a0291968ba98143123e89e6e6f5b2e13",
+        "latitude": 33.7519670553166,
+        "longitude": -84.4133448600769,
+        "name": "AUC - WOODRUFF LIBRARY",
+        "timestamp": "2017-07-09T17:20:04.270000Z"
+      },
+      {
+        "empty_slots": 3,
+        "extra": {
+          "address": "906-908 Ralph David Abernathy Boulevard, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2468"
+        },
+        "free_bikes": 7,
+        "id": "728a4670f3944fdbe3494b06b2ba5e93",
+        "latitude": 33.73797746075206,
+        "longitude": -84.41755458712578,
+        "name": "WEST END STATION",
+        "timestamp": "2017-07-09T17:20:04.266000Z"
+      },
+      {
+        "empty_slots": 9,
+        "extra": {
+          "address": "761 Ferst Drive, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2483"
+        },
+        "free_bikes": 1,
+        "id": "15cecf64572ed4356cbd81cf988792d6",
+        "latitude": 33.775499683660456,
+        "longitude": -84.40252281725407,
+        "name": "GEORGIA TECH - CRC",
+        "timestamp": "2017-07-09T17:20:04.413000Z"
+      },
+      {
+        "empty_slots": 5,
+        "extra": {
+          "address": "656-674 Lee Street Southwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2156"
+        },
+        "free_bikes": 5,
+        "id": "779bbacee3959afe342aa90ac25c9446",
+        "latitude": 33.736898385736104,
+        "longitude": -84.41377937793732,
+        "name": "MARTA - WEST END ",
+        "timestamp": "2017-07-09T17:20:04.263000Z"
+      },
+      {
+        "empty_slots": 6,
+        "extra": {
+          "address": "2-48 Arts Center Way Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2509"
+        },
+        "free_bikes": 4,
+        "id": "3433d22c60eb7bb304d443f42cd8830a",
+        "latitude": 33.78924550682652,
+        "longitude": -84.38663944602013,
+        "name": "MARTA - ARTS CENTER ",
+        "timestamp": "2017-07-09T17:20:04.257000Z"
+      },
+      {
+        "empty_slots": 7,
+        "extra": {
+          "address": "372-398 11th Street Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2510"
+        },
+        "free_bikes": 2,
+        "id": "ca5a730f0308293aba8cf9b26d94165d",
+        "latitude": 33.78330349062273,
+        "longitude": -84.39894944429398,
+        "name": "STATE & 11TH",
+        "timestamp": "2017-07-09T17:20:04.335000Z"
+      },
+      {
+        "empty_slots": 6,
+        "extra": {
+          "address": "200-268 Park Avenue Southeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2550"
+        },
+        "free_bikes": 2,
+        "id": "c60745096a68d2209b784005011727c9",
+        "latitude": 33.74663020220977,
+        "longitude": -84.36964496970177,
+        "name": "PARK & MEMORIAL",
+        "timestamp": "2017-07-09T17:20:04.403000Z"
+      },
+      {
+        "empty_slots": 0,
+        "extra": {
+          "address": "428, Woodward Avenue Southeast, Cabbage Town, Edgewood, Atlanta, Georgia",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2551"
+        },
+        "free_bikes": 9,
+        "id": "f57d36f78c4f301de5c9c6e735da946b",
+        "latitude": 33.74561654172673,
+        "longitude": -84.37335178256035,
+        "name": "CHEROKEE & WOODWARD",
+        "timestamp": "2017-07-09T17:20:04.340000Z"
+      },
+      {
+        "empty_slots": 5,
+        "extra": {
+          "address": "373-407 Westview Drive Southwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2178"
+        },
+        "free_bikes": 5,
+        "id": "59cd04c35e0e0bac279bbe35f8ae1d7a",
+        "latitude": 33.74427215464,
+        "longitude": -84.41357016563416,
+        "name": "SPELMAN COLLEGE AT WESTVIEW",
+        "timestamp": "2017-07-09T17:20:04.245000Z"
+      },
+      {
+        "empty_slots": 3,
+        "extra": {
+          "address": "523-581 Central Park Place Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2486"
+        },
+        "free_bikes": 7,
+        "id": "b9e0450047dc215b472d23b760991dfb",
+        "latitude": 33.768584573529424,
+        "longitude": -84.37771573662758,
+        "name": "CENTRAL PARK",
+        "timestamp": "2017-07-09T17:20:04.419000Z"
+      },
+      {
+        "empty_slots": 8,
+        "extra": {
+          "address": "133 Carnegie Way Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2506"
+        },
+        "free_bikes": 1,
+        "id": "200f0d8e2eadae553f51307056635934",
+        "latitude": 33.757984520513745,
+        "longitude": -84.38786789774895,
+        "name": "MARTA - PEACHTREE CENTER ",
+        "timestamp": "2017-07-09T17:20:04.243000Z"
+      },
+      {
+        "empty_slots": 0,
+        "extra": {
+          "address": "261-279 Elizabeth Street Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2523"
+        },
+        "free_bikes": 14,
+        "id": "1e29447480dc6b5832f8a2575cc6b4cf",
+        "latitude": 33.76172440814443,
+        "longitude": -84.35791835188866,
+        "name": "INMAN PARK",
+        "timestamp": "2017-07-09T17:20:04.398000Z"
+      },
+      {
+        "empty_slots": 10,
+        "extra": {
+          "address": "764 Argonne Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2521"
+        },
+        "free_bikes": 0,
+        "id": "54b2b0f9c7682bb4f46a8751de2bf09e",
+        "latitude": 33.77563321041897,
+        "longitude": -84.37769025564194,
+        "name": "5TH & ARGONNE",
+        "timestamp": "2017-07-09T17:20:04.454000Z"
+      },
+      {
+        "empty_slots": 8,
+        "extra": {
+          "address": "272-292 Peachtree Street Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_1470"
+        },
+        "free_bikes": 2,
+        "id": "7a7eab0422d4c28e5396fd3369800ee7",
+        "latitude": 33.7627941119619,
+        "longitude": -84.38727110624313,
+        "name": "HARDY IVY PARK",
+        "timestamp": "2017-07-09T17:20:04.378000Z"
+      },
+      {
+        "empty_slots": 9,
+        "extra": {
+          "address": "42-60 Park Place Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_1471"
+        },
+        "free_bikes": 1,
+        "id": "b3c363ba423cc40052ed318db51ad745",
+        "latitude": 33.75595602716396,
+        "longitude": -84.38792020082474,
+        "name": "WOODRUFF PARK",
+        "timestamp": "2017-07-09T17:20:04.379000Z"
+      },
+      {
+        "empty_slots": 4,
+        "extra": {
+          "address": "9-33 Gilmer Street Southeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_1473"
+        },
+        "free_bikes": 6,
+        "id": "297900a0387c138864ea6753546136b7",
+        "latitude": 33.7541786827386,
+        "longitude": -84.38625454902649,
+        "name": "GSU ARTS & HUMANITIES BLDG",
+        "timestamp": "2017-07-09T17:20:04.373000Z"
+      },
+      {
+        "empty_slots": 2,
+        "extra": {
+          "address": "142-148 Piedmont Avenue Southeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_1474"
+        },
+        "free_bikes": 8,
+        "id": "c06cc21f7205a70baa7ea65a7c0a62a5",
+        "latitude": 33.75082180926927,
+        "longitude": -84.38602454960346,
+        "name": "GSU PETIT SCIENCE CENTER",
+        "timestamp": "2017-07-09T17:20:04.363000Z"
+      },
+      {
+        "empty_slots": 6,
+        "extra": {
+          "address": "2-30 Jesse Hill Junior Drive Southeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_1475"
+        },
+        "free_bikes": 0,
+        "id": "4144448c1618b2d981fa9673538034e4",
+        "latitude": 33.753977976509304,
+        "longitude": -84.38063263893127,
+        "name": "SWEET AUBURN MARKET",
+        "timestamp": "2017-07-09T17:20:04.366000Z"
+      },
+      {
+        "empty_slots": 5,
+        "extra": {
+          "address": "311 Nelson Street Southwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_1476"
+        },
+        "free_bikes": 5,
+        "id": "c399df00a1f1d8b35faa1d0771861b2b",
+        "latitude": 33.75221452907895,
+        "longitude": -84.39781688153744,
+        "name": "NELSON ST BRIDGE",
+        "timestamp": "2017-07-09T17:20:04.354000Z"
+      },
+      {
+        "empty_slots": 3,
+        "extra": {
+          "address": "55 Trinity Avenue Southwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_1478"
+        },
+        "free_bikes": 5,
+        "id": "45278f447738647957662493d07411d6",
+        "latitude": 33.74842937828157,
+        "longitude": -84.39089745283127,
+        "name": "CITY HALL",
+        "timestamp": "2017-07-09T17:20:04.343000Z"
+      },
+      {
+        "empty_slots": 6,
+        "extra": {
+          "address": "101-115 Martin Luther King Junior Drive Southwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_1479"
+        },
+        "free_bikes": 1,
+        "id": "3c12291c7b777b5814b75caba76c1ee0",
+        "latitude": 33.75161964304091,
+        "longitude": -84.39111605286598,
+        "name": "M. RICH CENTER",
+        "timestamp": "2017-07-09T17:20:04.350000Z"
+      },
+      {
+        "empty_slots": 8,
+        "extra": {
+          "address": "61 5th Street Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_1633"
+        },
+        "free_bikes": 2,
+        "id": "b2c6401269b14c8a7f5eaff217ab34ef",
+        "latitude": 33.77686214844722,
+        "longitude": -84.38897430896759,
+        "name": "TECH SQUARE ",
+        "timestamp": "2017-07-09T17:20:04.472000Z"
+      },
+      {
+        "empty_slots": 0,
+        "extra": {
+          "address": "92-118 Park Avenue West Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2115"
+        },
+        "free_bikes": 14,
+        "id": "f23ad21bafcf3e725138b64e620778f2",
+        "latitude": 33.760331215618,
+        "longitude": -84.39453452825546,
+        "name": "CENTENNIAL OLYMPIC PARK",
+        "timestamp": "2017-07-09T17:20:04.239000Z"
+      },
+      {
+        "empty_slots": 0,
+        "extra": {
+          "address": "56 Marietta, Marietta Street, Five Points, Virginia Highland, Atlanta, Georgia",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2116"
+        },
+        "free_bikes": 9,
+        "id": "9d2641688fbb6ef2082b9963bdec2a42",
+        "latitude": 33.755496641897366,
+        "longitude": -84.39126022160053,
+        "name": "FAIRLIE-POPLAR DISTRICT",
+        "timestamp": "2017-07-09T17:20:04.240000Z"
+      },
+      {
+        "empty_slots": 1,
+        "extra": {
+          "address": "41 Piedmont Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2117"
+        },
+        "free_bikes": 0,
+        "id": "c8679995ee89d234424f9593e3c5f02b",
+        "latitude": 33.75580104079414,
+        "longitude": -84.382114559412,
+        "name": "Sweet Auburn",
+        "timestamp": "2017-07-09T17:20:04.241000Z"
+      },
+      {
+        "empty_slots": 5,
+        "extra": {
+          "address": "Peachtree Center Avenue Cycle Track, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2119"
+        },
+        "free_bikes": 2,
+        "id": "9b74df5f31e3543d950713638e8c27c4",
+        "latitude": 33.7600268326958,
+        "longitude": -84.38613921403885,
+        "name": "PEACHTREE CENTER MALL",
+        "timestamp": "2017-07-09T17:20:04.262000Z"
+      },
+      {
+        "empty_slots": 12,
+        "extra": {
+          "address": "250 10th Street Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2120"
+        },
+        "free_bikes": 2,
+        "id": "35dc08717db282f72c28ef9335661aba",
+        "latitude": 33.78175459469645,
+        "longitude": -84.37919497489929,
+        "name": "OUTWRITE STATION",
+        "timestamp": "2017-07-09T17:20:04.324000Z"
+      },
+      {
+        "empty_slots": 2,
+        "extra": {
+          "address": "3 Ivan Allen Junior Boulevard Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2124"
+        },
+        "free_bikes": 7,
+        "id": "41e909a2feaed84cab7f179e6a0c109b",
+        "latitude": 33.76482435962964,
+        "longitude": -84.38775390386581,
+        "name": "MARTA - CIVIC CENTER ",
+        "timestamp": "2017-07-09T17:20:04.316000Z"
+      },
+      {
+        "empty_slots": 7,
+        "extra": {
+          "address": "82-88 11th Street Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2125"
+        },
+        "free_bikes": 3,
+        "id": "d8dce93f2b158b3a1eb095c1f6c5423e",
+        "latitude": 33.78326496533073,
+        "longitude": -84.38439846038818,
+        "name": "FEDERAL RESERVE BANK OF ATLANTA",
+        "timestamp": "2017-07-09T17:20:04.312000Z"
+      },
+      {
+        "empty_slots": 9,
+        "extra": {
+          "address": "166-168 14th Street Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2143"
+        },
+        "free_bikes": 0,
+        "id": "64a8eda195dabe7df0f64f91beb9e205",
+        "latitude": 33.786481798857885,
+        "longitude": -84.38205286860466,
+        "name": "COLONY SQUARE",
+        "timestamp": "2017-07-09T17:20:04.284000Z"
+      },
+      {
+        "empty_slots": 3,
+        "extra": {
+          "address": "1099 Oak Street Southwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2157"
+        },
+        "free_bikes": 1,
+        "id": "fa2776c18ab00b384c18705fab030fb4",
+        "latitude": 33.7407972388353,
+        "longitude": -84.42424535751343,
+        "name": "WEST END PARK (Virtual Hub)",
+        "timestamp": "2017-07-09T17:20:04.264000Z"
+      },
+      {
+        "empty_slots": 1,
+        "extra": {
+          "address": "814 Martin Luther King Junior Drive Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2167"
+        },
+        "free_bikes": 9,
+        "id": "82eaab8e5cd37bdda8a23ba166c4a93c",
+        "latitude": 33.754745117784864,
+        "longitude": -84.41407442092896,
+        "name": "HISTORIC WESTSIDE VILLAGE",
+        "timestamp": "2017-07-09T17:20:04.283000Z"
+      },
+      {
+        "empty_slots": 0,
+        "extra": {
+          "address": "505-519 Park Drive Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2464"
+        },
+        "free_bikes": 6,
+        "id": "7030168fce01cc5c6f948320ed3cd6f0",
+        "latitude": 33.786330838375704,
+        "longitude": -84.37133476138115,
+        "name": "PIEDMONT PARK EAST",
+        "timestamp": "2017-07-09T17:20:04.276000Z"
+      },
+      {
+        "empty_slots": 2,
+        "extra": {
+          "address": "1158 Piedmont Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2465"
+        },
+        "free_bikes": 7,
+        "id": "25959905c7e0f315823a5d12c19737c3",
+        "latitude": 33.78646941628706,
+        "longitude": -84.3780979514122,
+        "name": "PIEDMONT PARK WEST",
+        "timestamp": "2017-07-09T17:20:04.279000Z"
+      },
+      {
+        "empty_slots": 3,
+        "extra": {
+          "address": "Dallas Street Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2466"
+        },
+        "free_bikes": 7,
+        "id": "ad48931ae2e16a95dfb478b9833583bc",
+        "latitude": 33.77082204006123,
+        "longitude": -84.36547882854939,
+        "name": "HISTORIC FOURTH WARD PARK",
+        "timestamp": "2017-07-09T17:20:04.281000Z"
+      },
+      {
+        "empty_slots": 8,
+        "extra": {
+          "address": "40-68 Andrew Young International Boulevard Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2168"
+        },
+        "free_bikes": 1,
+        "id": "e311fd3bccc7940a0d9d65ca753168eb",
+        "latitude": 33.759651091520546,
+        "longitude": -84.3894839286804,
+        "name": "WALTON SPRING PARK",
+        "timestamp": "2017-07-09T17:20:04.305000Z"
+      },
+      {
+        "empty_slots": 0,
+        "extra": {
+          "address": "179-195 Jackson Street Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2467"
+        },
+        "free_bikes": 8,
+        "id": "4668cd0645262e564faaa2b5b41d1e3a",
+        "latitude": 33.75953111105878,
+        "longitude": -84.37428183853626,
+        "name": "JACKSON STREET BRIDGE",
+        "timestamp": "2017-07-09T17:20:04.282000Z"
+      },
+      {
+        "empty_slots": 5,
+        "extra": {
+          "address": "531-541 Luckie Street Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2481"
+        },
+        "free_bikes": 4,
+        "id": "9a1a4a93c2c88354f78a8d252d836e5d",
+        "latitude": 33.76965983567862,
+        "longitude": -84.3961250782013,
+        "name": "THE COCA-COLA COMPANY",
+        "timestamp": "2017-07-09T17:20:04.417000Z"
+      },
+      {
+        "empty_slots": 2,
+        "extra": {
+          "address": "822-828 Hampton Street Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2482"
+        },
+        "free_bikes": 8,
+        "id": "50e6750f25f2d48e47c1b41566b0b300",
+        "latitude": 33.77751848287736,
+        "longitude": -84.4076082855463,
+        "name": "TECH PARKWAY",
+        "timestamp": "2017-07-09T17:20:04.406000Z"
+      },
+      {
+        "empty_slots": 6,
+        "extra": {
+          "address": "1005 Hemphill Avenue Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2485"
+        },
+        "free_bikes": 4,
+        "id": "552e91e3e0062354dbbafc986742be37",
+        "latitude": 33.78198954683177,
+        "longitude": -84.40441243350506,
+        "name": "HOME PARK",
+        "timestamp": "2017-07-09T17:20:04.425000Z"
+      },
+      {
+        "empty_slots": 8,
+        "extra": {
+          "address": "Tech Parkway Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2487"
+        },
+        "free_bikes": 2,
+        "id": "b71756a78a75922ed443bb4c22b892d2",
+        "latitude": 33.77274148914222,
+        "longitude": -84.39731866121292,
+        "name": "GEORGIA TECH - TRANSIT HUB",
+        "timestamp": "2017-07-09T17:20:04.424000Z"
+      },
+      {
+        "empty_slots": 2,
+        "extra": {
+          "address": "703 Techwood Drive Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2488"
+        },
+        "free_bikes": 8,
+        "id": "726cd6537a35e5ebe944f1fadd0c3049",
+        "latitude": 33.771415677924836,
+        "longitude": -84.39201325178146,
+        "name": "GEORGIA TECH -BOBBY DODD STADIUM",
+        "timestamp": "2017-07-09T17:20:04.466000Z"
+      },
+      {
+        "empty_slots": 1,
+        "extra": {
+          "address": "311-343 Bernina Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2490"
+        },
+        "free_bikes": 9,
+        "id": "2bbf13a8efa3681e4df3c7eb7b22de1e",
+        "latitude": 33.763762729319595,
+        "longitude": -84.35898385941982,
+        "name": "KING OF POPS",
+        "timestamp": "2017-07-09T17:20:04.295000Z"
+      },
+      {
+        "empty_slots": 10,
+        "extra": {
+          "address": "670-680 Greenwood Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2491"
+        },
+        "free_bikes": 0,
+        "id": "ffedf55f052de46c81031d9b8088583a",
+        "latitude": 33.77670401223132,
+        "longitude": -84.365274310112,
+        "name": "GREENWOOD AVE BELTLINE",
+        "timestamp": "2017-07-09T17:20:04.286000Z"
+      },
+      {
+        "empty_slots": 9,
+        "extra": {
+          "address": "46-76 10th Street Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2114"
+        },
+        "free_bikes": 1,
+        "id": "7f27cc58c6174def55cd3558eaa03b20",
+        "latitude": 33.781519398057654,
+        "longitude": -84.38624918460846,
+        "name": "MARTA - MIDTOWN  (NORTH)",
+        "timestamp": "2017-07-09T17:20:04.224000Z"
+      },
+      {
+        "empty_slots": 0,
+        "extra": {
+          "address": "2-62 Selman Street Southeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2496"
+        },
+        "free_bikes": 4,
+        "id": "351767da1aad03f7f24222413496c1a5",
+        "latitude": 33.75243323712974,
+        "longitude": -84.35825329273939,
+        "name": "ATLANTA BICYCLE COALITION - VIRTUAL HUB",
+        "timestamp": "2017-07-09T17:20:04.285000Z"
+      },
+      {
+        "empty_slots": 7,
+        "extra": {
+          "address": "261 4th Street Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2499"
+        },
+        "free_bikes": 2,
+        "id": "6414bf67c009df405ee974238afd89b7",
+        "latitude": 33.77526534074003,
+        "longitude": -84.39627662301064,
+        "name": "GEORGIA TECH - CLOUGH COMMONS ",
+        "timestamp": "2017-07-09T17:20:04.321000Z"
+      },
+      {
+        "empty_slots": 5,
+        "extra": {
+          "address": "386, Decatur Street Southeast, Sweet Auburn, Edgewood, Atlanta, Georgia",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2505"
+        },
+        "free_bikes": 5,
+        "id": "11636a1bbe442f3c95ddda7922824d84",
+        "latitude": 33.75018516761658,
+        "longitude": -84.37619626522064,
+        "name": "MARTA - KING MEMORIAL ",
+        "timestamp": "2017-07-09T17:20:04.337000Z"
+      },
+      {
+        "empty_slots": 4,
+        "extra": {
+          "address": "720-742 14th Street Northwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2511"
+        },
+        "free_bikes": 6,
+        "id": "15f549db851b395627eac7b3f8112320",
+        "latitude": 33.78583532095794,
+        "longitude": -84.4109120965004,
+        "name": "14TH & HOWELL MILL",
+        "timestamp": "2017-07-09T17:20:04.336000Z"
+      },
+      {
+        "empty_slots": 2,
+        "extra": {
+          "address": "1020 North Highland Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2513"
+        },
+        "free_bikes": 7,
+        "id": "f39ab44c5a8a4298443d0009983c3f11",
+        "latitude": 33.78252545832605,
+        "longitude": -84.35439795255661,
+        "name": "VIRGINIA-HIGHLAND",
+        "timestamp": "2017-07-09T17:20:04.338000Z"
+      },
+      {
+        "empty_slots": 3,
+        "extra": {
+          "address": "401-407 Chamberlain Street Southeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2518"
+        },
+        "free_bikes": 7,
+        "id": "6af16e8642956ecf61fbd32c8eac14eb",
+        "latitude": 33.7537634015125,
+        "longitude": -84.37424764037132,
+        "name": "JACKSON & CHAMBERLAIN",
+        "timestamp": "2017-07-09T17:20:04.385000Z"
+      },
+      {
+        "empty_slots": 1,
+        "extra": {
+          "address": "1-11 Randolph Street Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2519"
+        },
+        "free_bikes": 9,
+        "id": "4f973ffc67938fb7131dd1c516259e27",
+        "latitude": 33.75436074656531,
+        "longitude": -84.36804033815861,
+        "name": "RANDOLPH & EDGEWOOD",
+        "timestamp": "2017-07-09T17:20:04.399000Z"
+      },
+      {
+        "empty_slots": 2,
+        "extra": {
+          "address": "1111 Euclid Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2522"
+        },
+        "free_bikes": 7,
+        "id": "8b9a377496848983aa1ecfd86852a463",
+        "latitude": 33.76411033616185,
+        "longitude": -84.35083195567131,
+        "name": "LITTLE FIVE POINTS",
+        "timestamp": "2017-07-09T17:20:04.401000Z"
+      },
+      {
+        "empty_slots": 4,
+        "extra": {
+          "address": "250 North Highland Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2524"
+        },
+        "free_bikes": 6,
+        "id": "ca38a00b474197c316a3001a4c2367e1",
+        "latitude": 33.761851197128635,
+        "longitude": -84.3600144982338,
+        "name": "INMAN PARK VILLAGE",
+        "timestamp": "2017-07-09T17:20:04.471000Z"
+      },
+      {
+        "empty_slots": 8,
+        "extra": {
+          "address": "29 Peachtree Street Southwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_1472"
+        },
+        "free_bikes": 2,
+        "id": "3da73394c573a6f51df6f9d25cfaad9f",
+        "latitude": 33.7534918194732,
+        "longitude": -84.39071238040923,
+        "name": "MARTA - FIVE POINTS ",
+        "timestamp": "2017-07-09T17:20:04.369000Z"
+      },
+      {
+        "empty_slots": 0,
+        "extra": {
+          "address": "681 Cherokee Avenue Southeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2542"
+        },
+        "free_bikes": 9,
+        "id": "420086edd6ba1c636676ed45e85b1205",
+        "latitude": 33.73593511108224,
+        "longitude": -84.37361933290958,
+        "name": "GRANT PARK ",
+        "timestamp": "2017-07-09T17:20:04.405000Z"
+      },
+      {
+        "empty_slots": 5,
+        "extra": {
+          "address": "698 North Highland Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2544"
+        },
+        "free_bikes": 5,
+        "id": "c31d2cfec68be0aebde3c60e290f2bcb",
+        "latitude": 33.77333790069454,
+        "longitude": -84.35256332159041,
+        "name": "PONCE - HIGHLAND",
+        "timestamp": "2017-07-09T17:20:04.247000Z"
+      },
+      {
+        "empty_slots": 7,
+        "extra": {
+          "address": "1030 DeKalb Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2512"
+        },
+        "free_bikes": 4,
+        "id": "5c614611f271afdbc19f1397646036b4",
+        "latitude": 33.75754218436465,
+        "longitude": -84.35372605919838,
+        "name": "MARTA - INMAN PARK ",
+        "timestamp": "2017-07-09T17:20:04.334000Z"
+      },
+      {
+        "empty_slots": 0,
+        "extra": {
+          "address": "666 Highland Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2543"
+        },
+        "free_bikes": 7,
+        "id": "2a53f34d92804f0f61cc0eaac860a1e4",
+        "latitude": 33.761360938566554,
+        "longitude": -84.36555191874504,
+        "name": "HIGHLAND - FREEDOM TRAIL",
+        "timestamp": "2017-07-09T17:20:04.470000Z"
+      },
+      {
+        "empty_slots": 3,
+        "extra": {
+          "address": "BeltLine (Under Construction), Inman Park, Edgewood, Atlanta, Georgia",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2520"
+        },
+        "free_bikes": 5,
+        "id": "3832ef558bde7e623e3ea2ed8e2d03c2",
+        "latitude": 33.75431459473674,
+        "longitude": -84.36560288071632,
+        "name": "EDGEWOOD & EASTSIDE BELTLINE",
+        "timestamp": "2017-07-09T17:20:04.460000Z"
+      },
+      {
+        "empty_slots": 4,
+        "extra": {
+          "address": "Meadow Path, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2463"
+        },
+        "free_bikes": 5,
+        "id": "9e389e7aeec03282010ac13bbdb80074",
+        "latitude": 33.7821141461038,
+        "longitude": -84.36991184949875,
+        "name": "PIEDMONT PARK & EASTSIDE BELTLINE",
+        "timestamp": "2017-07-09T17:20:04.271000Z"
+      },
+      {
+        "empty_slots": 0,
+        "extra": {
+          "address": "632 Auburn Avenue Northeast, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2489"
+        },
+        "free_bikes": 10,
+        "id": "776a95950abc988f78c1323d28b95071",
+        "latitude": 33.75686395446368,
+        "longitude": -84.3664712458849,
+        "name": "STUDIOPLEX",
+        "timestamp": "2017-07-09T17:20:04.468000Z"
+      },
+      {
+        "empty_slots": 4,
+        "extra": {
+          "address": "1340-1346 Ralph David Abernathy Boulevard Southwest, Atlanta",
+          "last_updated": 1499620773,
+          "renting": 1,
+          "returning": 1,
+          "uid": "hub_2155"
+        },
+        "free_bikes": 5,
+        "id": "c3449f165a5b6f7c74b850bc4108c736",
+        "latitude": 33.738874600132334,
+        "longitude": -84.43203449249268,
+        "name": "GORDON-WHITE PARK",
+        "timestamp": "2017-07-09T17:20:04.394000Z"
+      }
+    ]
+  }
+}
