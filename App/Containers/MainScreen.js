@@ -93,8 +93,8 @@ export default class MainScreen extends React.Component {
   }
 
   getHubs() {
-    // this.callGetHubs() // TODO: DO NOT DELETE THIS LINE. this is the real api call.
-    this.getMockHubs()
+    this.callGetHubs() // TODO: DO NOT DELETE THIS LINE. this is the real api call.
+    // this.getMockHubs()
   }
 
   callGetHubs = () => {

@@ -3,7 +3,7 @@ import apisauce from 'apisauce'
 
 // our "constructor"
 
-const create = (baseURL = 'http://api.citybik.es/v2/') => {
+const create = (baseURL = 'https://api.citybik.es/v2/') => {
   // ------
   // STEP 1
   // ------
@@ -16,7 +16,7 @@ const create = (baseURL = 'http://api.citybik.es/v2/') => {
     // here are some default headers
     headers: {
       'Cache-Control': 'no-cache'
-    },
+     },
     // 10 second timeout...
     timeout: 10000
   })
@@ -37,7 +37,7 @@ const create = (baseURL = 'http://api.citybik.es/v2/') => {
   //
 
   const getSomeExample = () => api.get('some_example')
-  const getHubs = (networkId) => api.get('networks', {network_id: networkId})
+  const getHubs = (networkId) => api.get('networks/' + networkId)
 
   // ------
   // STEP 3
